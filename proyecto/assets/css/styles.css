@@ -1,0 +1,12 @@
+body {
+    background-color: #181616;
+}
+
+.borde {
+    border-radius: 20px;
+}
+.pc {
+    width: 70%;
+    height: auto;
+    
+}
