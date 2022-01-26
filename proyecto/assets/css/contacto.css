@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+body {
+  background-color: /* #181616 */ #212529;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  font-family: "Poppins", sans-serif;
+  font-size: 23px;
+  line-height: 4s0px;
+}
+
+footer {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+main {
+  min-height: 70vh;
+}
+
+.navbar-brand {
+  margin-left: 30px;
+  font-size: 45px;
+}
+
+.titulo {
+  color: #DA2969;
+  text-align: center;
+  font-weight: 600;
+}
+
+.contacto {
+  margin: 15px 20% 15px 20%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.enviar {
+  text-align: center;
+}
+
+.btn-enviar {
+  height: 49px;
+
+  background: linear-gradient(
+    270.82deg,
+    rgba(198, 0, 48, 0.84) 46.03%,
+    rgba(175, 15, 159, 0.1092) 95.57%
+  );
+  border: 0.5px solid;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  font-family: Poppins;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  padding-left:20%;
+  padding-right:20%;
+}
+
+.form-control{
+  color: white;
+  font-weight: 600;
+  background-color: #3a3636;
+}
+
+
+
