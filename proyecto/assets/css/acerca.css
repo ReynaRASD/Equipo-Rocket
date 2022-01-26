@@ -1,0 +1,24 @@
+
+
+
+.list-social {
+    list-style-type: none;
+    flex-direction: row;
+    flex: 1;
+}
+
+.img-border-rounded{
+    border-radius: 50%;
+    /* border: 3px solid white; */
+}
+
+h2 {
+    color: rgb(212, 38, 102);
+}
+
+.grad-text {
+    background: -webkit-linear-gradient(#eee, #333);
+    /* background: -webkit-linear-gradient(rgb(0, 110, 255), rgb(255, 255, 255)); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
