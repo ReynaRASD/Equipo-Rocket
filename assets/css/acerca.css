@@ -23,7 +23,8 @@ h2 {
     -webkit-text-fill-color: transparent;
 }
 
-body{
+
+.blackBG {
     background-color: black;
 }
 
