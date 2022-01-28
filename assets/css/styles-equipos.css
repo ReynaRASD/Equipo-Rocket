@@ -15,11 +15,56 @@ body {
     background-color: #181616;
 }
 
-.borde {
-    border-radius: 20px;
-   border-color: rgb(34,70,195);
+h1{
+  color: #da2969;
+  font-weight: 600;
+  font-size: 50px;
 
 }
+
+.compu1{
+  border: 10px solid rgb(255, 81, 0);
+  border-radius: 20px; 
+  
+} 
+
+.compu2{
+  border: 10px solid rgb(21, 255, 0);
+  border-radius: 20px; 
+  
+}
+
+.compu3{
+  border: 10px solid purple;
+  border-radius: 20px; 
+  
+}
+
+.compu4{
+  border: 10px solid rgb(224, 12, 12);
+  border-radius: 20px; 
+  
+} 
+
+.compu5{
+  border: 10px solid rgb(219, 243, 6);
+  border-radius: 20px; 
+  
+}
+
+.compu6{
+  border: 10px solid rgb(240, 0, 188);
+  border-radius: 20px; 
+  
+} 
+
+.compu7{
+  border: 10px solid rgb(55, 0, 255);
+  border-radius: 20px; 
+  
+}
+
+
 .pc {
     width: 70%;
     height: auto;
@@ -33,7 +78,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 8px;
 font-style: normal;
 font-weight: 600;
-font-size: 28px;
+font-size: 20px;
 /* width: 20px; */
 color: #FFFFFF;
 }
@@ -46,7 +91,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 8px;
 font-style: normal;
 font-weight: 600;
-font-size: 28px;
+font-size: 20px;
 color: #FFFFFF;
 
 
@@ -55,7 +100,6 @@ color: #FFFFFF;
 
 /** footer **/
 footer {
-    font-family: "Poppins", sans-serif;
   
     padding: 1%;
   }
