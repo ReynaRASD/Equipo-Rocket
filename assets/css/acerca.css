@@ -187,6 +187,11 @@ footer .text-icono3 {
 }
 
 
-
+.esconder {
+  background: transparent;
+  border: none !important;
+  
+  /* border: 0px solid black; */
+}
 
 
