@@ -1,28 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
-body{
-    background-color: black;
+*{
     font-family: 'Poppins', sans-serif;
 }
+
 header {
-    font-family: 'Poppins', sans-serif;
+    
     font-size: 23px;
     line-height: 4s0px;
     
 }
-
-
-section button{
-font-family: 'Poppins', sans-serif;
-background: linear-gradient(270.82deg, rgba(198, 0, 48, 0.84) 46.03%, rgba(175, 15, 159, 0.1092) 95.57%);
+.rosita{
+    color: rgb(212, 38, 102);
+    font-size: 40px;
+    font-weight: bold;
+}
+body{
+    background-color: #181616;
+}
+.botoncitos{
+    background: linear-gradient(270.82deg, rgba(198, 0, 48, 0.84) 46.03%, rgba(175, 15, 159, 0.1092) 95.57%);
 border: 0.5px solid #05496d;
 box-sizing: border-box;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 8px;
 font-weight: 600;
-font-size: 28px;
+font-size: 17px;
 color: #FFFFFF;
 }
+
+
+.micarrito{
+    background-color: #02030C;
+    font-size: 40px;
+    text-align: center;
+    color: #DA2969;
+    width: 30%;
+    padding-bottom: 2%;
+    border: solid rgb(144, 32, 255);
+    border-radius: 24px;
+    margin-left: 32%;
+}
+.agregarp{
+    background-color: #181616;
+    color:#FFFFFF;
+    width: 80%;
+    font-size: 30px;
+}
+.compra{
+    height: 49px;
+
+background: linear-gradient(270.82deg, rgba(198, 0, 48, 0.84) 46.03%, rgba(175, 15, 159, 0.1092) 95.57%);
+border: 0.5px solid #61B0DC;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 8px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+
+color: #FFFFFF;
+margin-left: 35%;
+}
+/*
+height: 43px;
+width: 370px;
+left: 558px;
+top: 900px;
+border-radius: 8px; */
 
 
 /** footer **/
