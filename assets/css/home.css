@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
-body{
-    background-color: black;
+*{
     font-family: 'Poppins', sans-serif;
 }
 header {
@@ -12,16 +11,51 @@ header {
 }
 
 
-section button{
-font-family: 'Poppins', sans-serif;
-background: linear-gradient(270.82deg, rgba(198, 0, 48, 0.84) 46.03%, rgba(175, 15, 159, 0.1092) 95.57%);
-border: 0.5px solid #05496d;
-box-sizing: border-box;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 8px;
-font-weight: 600;
-font-size: 28px;
-color: #FFFFFF;
+
+main .centro{
+  
+  margin-top: 20%;
+  margin-bottom: 5%;
+  font-weight: bolder;
+  color: #da2969;
+  text-align: center;
+  font-weight: 600;
+  
+}
+
+main .centro1{
+  text-align: center;
+  
+  
+}
+
+
+main .pc {
+  width: 80%;
+  height: 99%;
+  vertical-align: middle;
+}
+
+
+main .btn-enviar {
+  height: 49px;
+  background: linear-gradient(
+    270.82deg,
+    rgba(198, 0, 48, 0.84) 46.03%,
+    rgba(175, 15, 159, 0.1092) 95.57%
+  );
+  border: 0.5px solid;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  font-family: Poppins;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-bottom: 10%;
+  margin-top: 10%;
 }
 
 
