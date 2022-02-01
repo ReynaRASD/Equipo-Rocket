@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+/*css*/
 body {
-  background-color: /* #181616 */ #212529;
+  background-color:#212529;
   font-family: "Poppins", sans-serif;
 }
 
@@ -21,7 +22,6 @@ main {
 }
 
 
-
 .titulo {
   color: #da2969;
   text-align: center;
@@ -34,6 +34,11 @@ main {
   padding-bottom: 10px;
   font-size: 18px;
   font-weight: 600;
+}
+
+#nombre, #email{
+  background: #3a3636;
+  color: white;
 }
 
 .enviar {
