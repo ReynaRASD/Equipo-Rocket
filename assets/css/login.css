@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-
-body{
-    background-color: black;
+ 
+*{
+  font-family: 'Poppins', sans-serif;
 }
+
 header {
     font-family: 'Poppins', sans-serif;
     font-size: 23px;
@@ -10,81 +11,94 @@ header {
     
 }
 
-main{
-    background-color: black;
+.titulo{
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    color: #da2969; 
+    font-weight: 600; 
+
+  
 }
 
-main .text-comentario{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    
+
+.menu{
+    background-color: #212529; 
+   
+    border-radius: 10px;
+    width: 600px; 
+    height: 700px; 
+    margin: auto;
+}
+
+.mb-3{
+ text-align: left;
     color: white;
-    font-weight: bolder;
     font-size: 25px;
+
+} 
+
+#exampleDropdownFormEmail2{
+    width: 350px;
+    height: 36.88px;
+    background: #131212;
+    border: 1px solid rgba(255, 255, 255, 0.91);
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: white;
 }
 
-main .text-ask{
-color: rgb(212, 38, 102);
-font-weight: bolder;
-font-size: 40px;
-
+#exampleDropdownFormPassword2{
+    width: 350px;
+height: 36.88px;
+background: #131212;
+border: 1px solid rgba(255, 255, 255, 0.91);
+box-sizing: border-box;
+border-radius: 8px;
+color: white;
 }
 
-main .btn{
-color: black;
-font-weight: bolder;
-font-size: 20px;
-font-family: 'Poppins', sans-serif;
-background: linear-gradient(135deg,#79CBCA,#E684AE);
-border: 0.5px solid #252525;
+
+.boton{
+
+height: 40px;
+width: 180px;
+
+background: linear-gradient(270.82deg, rgba(14, 231, 6, 0.84) 46.03%, rgba(175, 15, 159, 0.1092) 95.57%);
+border: 0.5px solid #61B0DC;
 box-sizing: border-box;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
+border-radius: 8px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+color: #FFFFFF; 
+
+text-align: center;
+
 }
 
-main #resultado{
+.unete{
+    text-align: center;
+    font-size: 0.70cm;
+} 
 
-  margin-top: 5%;
-  height: 49px;
 
-  background: linear-gradient(
-    270.82deg,
-    rgba(198, 0, 48, 0.84) 46.03%,
-    rgba(175, 15, 159, 0.1092) 95.57%
-  );
-  border: 0.5px solid;
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  font-family: Poppins;
-  color: white;
-  font-weight: 600;
-  font-size: 18px;
-  padding-left: 20%;
-  padding-right: 20%;
-}
 
-/*
-main .text-answer{
+section button{
     font-family: 'Poppins', sans-serif;
-    color: white;
-    font-weight: bolder;
-    font-size: 20px;
-    margin-top: 5%;
-    margin-bottom: 8%;
-}
+    background: linear-gradient(270.82deg, rgba(198, 0, 48, 0.84) 46.03%, rgba(175, 15, 159, 0.1092) 95.57%);
+    border: 0.5px solid #05496d;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 28px;
+    color: #FFFFFF;
+    }
 
-main .text-answer .direccion{
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bolder;
-    font-size: 20px;
-    text-decoration: underline;
-}
-*/
-
-/** footer **/
+    /** footer **/
 footer {
     font-family: "Poppins", sans-serif;
   
