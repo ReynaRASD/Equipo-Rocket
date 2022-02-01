@@ -15,51 +15,57 @@ header {
     text-align: center;
     color: #da2969; 
     font-weight: 600; 
-
-  
 }
 
-    
-
-.menu{
-    background-color: #212529; 
-   
-    border-radius: 10px;
-    width: 600px; 
-    height: 700px; 
-    margin: auto;
+.login {
+  margin: 20px 30% 20px 30%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  color:rgb(32, 28, 28);
 }
+
+main {
+  min-height: 70vh;
+}
+
+#unete{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+
 
 .mb-3{
- text-align: left;
     color: white;
-    font-size: 25px;
-
+    font-size: 20px;
+    margin-top: 30px;
 } 
 
 #exampleDropdownFormEmail2{
     width: 350px;
     height: 36.88px;
     background: #131212;
-    border: 1px solid rgba(255, 255, 255, 0.91);
+    border: 1px solid ;
     box-sizing: border-box;
     border-radius: 8px;
-    color: white;
+    color: rgb(15, 15, 15);
 }
 
 #exampleDropdownFormPassword2{
     width: 350px;
 height: 36.88px;
 background: #131212;
-border: 1px solid rgba(255, 255, 255, 0.91);
+border: 1px solid rgba(34, 29, 29, 0.91);
 box-sizing: border-box;
 border-radius: 8px;
-color: white;
+color: rgb(15, 15, 15);
 }
 
 
 .boton{
-
 height: 40px;
 width: 180px;
 
@@ -79,11 +85,6 @@ text-align: center;
 
 }
 
-.unete{
-    text-align: center;
-    font-size: 0.70cm;
-} 
-
 
 
 section button{
@@ -95,7 +96,7 @@ section button{
     border-radius: 8px;
     font-weight: 600;
     font-size: 28px;
-    color: #FFFFFF;
+    color: white;
     }
 
     /** footer **/
@@ -236,3 +237,10 @@ footer {
       animation-timing-function: ease-in;
     }
   }
+
+@media only screen and (max-width: 600px){
+  .login {
+    margin: 20px 15% 20px 15%;
+  }
+
+}
