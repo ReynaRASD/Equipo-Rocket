@@ -202,7 +202,7 @@ color: #FFFFFF;
 #botonregistro{
 
 height: 49px;
-
+width: 50%;
 background: linear-gradient(270.82deg, rgba(198, 0, 48, 0.84) 46.03%, rgba(175, 15, 159, 0.1092) 95.57%);
 border: 0.5px solid #61B0DC;
 box-sizing: border-box;
