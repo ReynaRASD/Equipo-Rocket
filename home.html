@@ -12,55 +12,62 @@
 
     <title>Home</title>
   </head>
-<body>
+<body class="bg-dark">
+  <header style="margin: 0px;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+        <img class="navbar-brand text-white bg-dark" src="assets/img/logo.jpeg" alt="" width="20%">
+        <button class="navbar-toggler text-white bg-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul style="padding-left: 70px;" class="navbar-nav">
+            <li class="nav-item">
+              <a style="padding-right: 20px;" class="nav-link active text-white bg-dark" aria-current="page"
+                href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a style="padding-right: 20px;" class="nav-link text-white bg-dark"
+                href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a style="padding-right: 20px;" class="nav-link text-white bg-dark" href="acerca.html">Acerca de
+                Nosotros</a>
+            </li>
+            <li style="padding-right: 20px;" class="nav-item">
+              <a class="nav-link text-white bg-dark" href="login.html">Login</a>
+            </li>
+  
+            <li class="nav-item dropdown">
+              <a style="padding-right: 20px;" class="nav-link dropdown-toggle text-white bg-dark"
+                href="equipos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                Lista de Productos
+              </a>
+  
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" data-bs-popper="none">
+                <li><a class="dropdown-item text-white bg-dark" href="recomendacion.html">Recomendación</a>
+                </li>
+                <li><a class="dropdown-item text-white bg-dark" href="equipos.html#alta">Gama Alta</a></li>
+                <li><a class="dropdown-item text-white bg-dark" href="equipos.html#media">Gama Media</a></li>
+                <li><a class="dropdown-item text-white bg-dark" href="equipos.html#baja">Gama Baja</a></li>
+              </ul>
+  
+            </li>
+            <li class="nav-item">
+              <a style="padding-right: 20px;" class="nav-link" href="carrito.html"><img src="assets/img/carro3.png"
+                  width="50px" height="50px"></a>
+            </li>
+  
+  
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-
-    <header style="margin: 0px;">
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <div class="container-fluid">
-              <img class="navbar-brand text-white bg-dark"  src="assets/img/logo.jpeg" alt="" width="20%">
-              <button class="navbar-toggler text-white bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="navbar-collapse collapse show" id="navbarNavDropdown" style="">
-                <ul style="padding-left: 70px;" class="navbar-nav">
-                  <li class="nav-item">
-                    <a style="padding-right: 20px;" class="nav-link active text-white bg-dark" aria-current="page" href="home.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a style="padding-right: 20px;" class="nav-link text-white bg-dark" target="_blank" href="contacto.html">Contacto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a style="padding-right: 20px;" class="nav-link text-white bg-dark" target="_blank" href="#">Acerca de Nosotros</a>
-                  </li>
-                  <li style="padding-right: 20px;" class="nav-item">
-                    <a class="nav-link text-white bg-dark" target="_blank" href="#">Login</a>
-                  </li>
-    
-                  <li class="nav-item dropdown">
-                    <a style="padding-right: 20px;" class="nav-link dropdown-toggle text-white bg-dark show" target="_blank" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                      Lista de Productos
-                    </a>
-
-                    <ul class="dropdown-menu show" aria-labelledby="navbarDropdownMenuLink" data-bs-popper="none">
-                      <li><a class="dropdown-item text-white bg-dark" target="_blank" href="recomendacion.html">Recomendación</a></li>
-                      <li><a class="dropdown-item text-white bg-dark" target="_blank" href="#">Gama Baja</a></li>
-                      <li><a class="dropdown-item text-white bg-dark" target="_blank" href="#">Gama Media</a></li>
-                      <li><a class="dropdown-item text-white bg-dark" target="_blank" href="#">Gama Alta</a></li>
-                    </ul>
-    
-                    </li><li class="nav-item">
-                        <a style="padding-right: 20px;" class="nav-link" target="_blank" href="#"><img src="assets/img/carro3.png" width="50px" height="50px"></a>
-                    </li>
-    
-                  
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </header>
-
-        <carousel>
+        <carousel class="bg-dark">
             <div id="carouselExampleCaptions" class="carousel slide pointer-event" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
@@ -87,6 +94,24 @@
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Third slide label</h5>
                       <p>Some representative placeholder content for the third slide.</p>
+                    <a href="recomendacion.html"><img src="assets/img/carrusel1.jpg" class="d-block w-100" alt="..."></a>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="text-white fw-bold fs-2">Gama Alta</h5>
+                      <p class="fw-bolder">Adquiere tu Pc gamer de alta gama que poseen características de diseño, estructura y eficacia que harán de ella una máquina muy eficaz.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="recomendacion.html"><img src="assets/img/carrusel3.jfif" class="d-block w-100" alt="..."></a>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="text-white fw-bold fs-2">Gama Media</h5>
+                      <p class="fw-bolder">Si quieres más poder es para una buena causa.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item active">
+                    <a href="recomendacion.html"><img src="assets/img/carrusel2.jfif" class="d-block w-100" alt="..."></a>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="text-white fw-bold fs-2">Gama Baja</h5>
+                      <p class="fw-bolder">Ideal para estudiantes.</p>
                     </div>
                   </div>
                 </div>
@@ -112,6 +137,88 @@
 
           <footer style="margin: 0px;" class="footer bg-dark">
 
+        <main class="container text-white">
+          
+        
+
+
+        <div class="row mt-5">
+    
+          <div class="col-md-6">
+            <a href="equipos.html#baja"> <img
+                src="assets/img/bajahome.jpg"
+                class="pc m-5" alt="PC"></a>
+          </div>
+
+          <div class="col-md-6">
+            <h2 class="centro"> <strong> Gama Baja </strong></h2>
+            <p class="centro1">
+              La gama baja es perfecta para cualquiera que quiera experimentar cualquier videojuego con una resolución de 1080p y 60fps, de igual manera te servirá para desempeñar cualquier tipo de trabajo en diseño,  realizar tareas de la escuela y alguno que otro stream.
+            </p>
+    
+          </div>
+    
+        </div>
+
+
+
+
+
+
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <a href="equipos.html#media"> <img
+                src="assets/img/mediahome.jpg"
+                class="pc m-5" alt="PC"></a>
+          </div>
+    
+          <div class="col-md-6">
+            <h2 class="centro"> <strong> Gama Media </strong></h2>
+            <p class="centro1">
+              Si quieres tener una PC de oficina pero con el suficiente poder para jugar uno que otro juego en tus tiempos libres, amaras la gama media, es costeable y nunca te quedara mal. 
+            </p>
+    
+          </div>
+         
+        </div>
+
+
+
+
+        <div class="row mt-5">
+    
+          <div class="col-md-6">
+            <a href="equipos.html#alta"> <img
+                src="assets/img/altahome.jfif"
+                class="pc m-5" alt="PC"></a>
+          </div>
+
+          <div class="col-md-6">
+            <h2 class="centro"> <strong> Gama Alta </strong></h2>
+            <p class="centro1">
+              La gama alta te dejara jugar y hacer sin problema lo que desees. Los mejores PC de gama alta tienen potentes procesadores de Intel y AMD, de octava y novena generación, sí como tarjetas de vídeo de alto nivel de Nvidia y AMD Radeon.
+            </p>
+    
+          </div>
+    
+        </div>
+
+
+
+
+
+
+            <div class="row enviar">
+              <button class="btn-enviar"><a style="text-decoration: none; color: white;" href="equipos.html" >Descubre nuestros Productos</a></button>
+            </div>
+
+           </main>
+      
+       
+
+  
+          <footer style="margin: 0px;" class="footer bg-dark">
+    
             <div class="col-md-4 d-flex align-items-center">
               <p class="text-rocket text-center">© 2022 Equipo Rocket</p>
             </div>
@@ -128,6 +235,20 @@
           
             </footer>
                    
+              <li class="ms-3 figma"><a class="text-icono1"
+                  href="https://www.figma.com/file/a1sA5a7ZghgSQnh4fBYfPF/ArtWare-Mockup-2.0?node-id=28%3A86"><i
+                    class="fab fa-figma" aria-hidden="true"></i>
+                </a></li>
+              <li class="ms-3 git"><a class="text-icono2" href="https://github.com/ReynaRASD/Equipo-Rocket"><i
+                    class="fab fa-github" aria-hidden="true"></i></a></li>
+              <li class="ms-3 lin"><a class="text-icono3" href="https://www.linkedin.com/"><i class="fab fa-linkedin"
+                    aria-hidden="true"></i>
+                </a></li>
+          
+            </ul>
+          
+          </footer>
+          
                 
                   <script src="https://kit.fontawesome.com/9392ec639d.js"></script>
                   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
