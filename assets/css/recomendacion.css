@@ -44,6 +44,19 @@ border-radius: 10px;
 }
 
 main #resultado{
+<<<<<<< HEAD
+color: white;
+margin-top: 5%;
+font-family: 'Poppins', sans-serif;
+background: linear-gradient(270.82deg, rgba(198, 0, 48, 0.84) 46.03%, rgba(175, 15, 159, 0.1092) 95.57%);
+border: 0.5px solid #05496d;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 8px;
+font-weight: 600;
+font-size: 28px;
+color: #FFFFFF;
+=======
 
   margin-top: 5%;
   height: 49px;
@@ -63,6 +76,7 @@ main #resultado{
   font-size: 18px;
   padding-left: 20%;
   padding-right: 20%;
+>>>>>>> master
 }
 
 /*
@@ -84,6 +98,43 @@ main .text-answer .direccion{
 }
 */
 
+<<<<<<< HEAD
+footer{
+    font-family: 'Poppins', sans-serif;
+    
+    padding: 1%;
+   
+}
+footer ul a{
+
+    margin-right: 50px;
+}
+
+footer p{
+    margin-left: 50px;
+}
+
+footer .text-rocket{
+    color: rgb(212, 38, 102);
+    font-size: 30px;
+    font-weight: bolder;
+}
+footer .text-icono1{
+    color: darkviolet;
+   
+    font-size: 40px;
+}
+footer .text-icono2{
+    color: cyan;
+    font-size: 40px;
+}
+footer .text-icono3{
+    color: deeppink;  
+    font-size: 40px;
+}
+
+.figma{
+=======
 /** footer **/
 footer {
     font-family: "Poppins", sans-serif;
@@ -118,12 +169,71 @@ footer {
   }
   
   .figma {
+>>>>>>> master
     -ms-transform-origin: top center;
     transform-origin: top center;
     animation-name: fig;
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
+<<<<<<< HEAD
+}
+   
+@keyframes fig {
+    20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+    }
+    40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+    }
+    60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+    }
+    80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+    }
+    100% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+    }
+    }
+
+    .git {
+        animation-name: git;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+    }
+    
+    @keyframes git {
+        20% {
+        -webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);
+        }
+        40% {
+        -webkit-transform: rotate3d(0, 0, 1, -10deg);
+        transform: rotate3d(0, 0, 1, -10deg);
+        }
+        60% {
+        -webkit-transform: rotate3d(0, 0, 1, 5deg);
+        transform: rotate3d(0, 0, 1, 5deg);
+        }
+        80% {
+        -webkit-transform: rotate3d(0, 0, 1, -5deg);
+        transform: rotate3d(0, 0, 1, -5deg);
+        }
+        100% {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+        }
+        }
+  
+.lin{
+=======
   }
   
   @keyframes fig {
@@ -180,11 +290,47 @@ footer {
   }
   
   .lin {
+>>>>>>> master
     backface-visibility: visible;
     animation-name: lin;
     animation-duration: 1.5s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
+<<<<<<< HEAD
+}
+@keyframes lin {
+    0% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    }
+    40% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    }
+    50% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    }
+    80% {
+    -webkit-transform: perspective(400px) scale3d(.95, .95, .95);
+    transform: perspective(400px) scale3d(.95, .95, .95);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    }
+    100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    }
+    } 
+=======
   }
   @keyframes lin {
     0% {
@@ -222,3 +368,4 @@ footer {
       animation-timing-function: ease-in;
     }
   }
+>>>>>>> master
