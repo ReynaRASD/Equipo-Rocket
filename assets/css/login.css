@@ -51,7 +51,7 @@ main {
     border: 1px solid ;
     box-sizing: border-box;
     border-radius: 8px;
-    color: rgb(15, 15, 15);
+    color: rgb(255, 254, 254);
 }
 
 #exampleDropdownFormPassword2{
@@ -61,7 +61,7 @@ background: #131212;
 border: 1px solid rgba(34, 29, 29, 0.91);
 box-sizing: border-box;
 border-radius: 8px;
-color: rgb(15, 15, 15);
+color: rgb(255, 244, 244);
 }
 
 
