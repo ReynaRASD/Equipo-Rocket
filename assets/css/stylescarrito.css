@@ -18,12 +18,9 @@ footer {
 }
 
 main {
-  min-height: 70vh;
-}
+  min-height: 70vh; 
+  
 
-.navbar-brand {
-  margin-left: 30px;
-  font-size: 45px;
 }
 
 .titulo {
@@ -32,44 +29,42 @@ main {
   font-weight: 600;
 }
 
-.contacto {
-  margin: 15px 20% 15px 20%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 18px;
-  font-weight: 600;
+.list-group-item{
+  background-color: rgb(32, 29, 29); 
+  border-color: chartreuse; 
+  color: white; 
+  border-style: solid;
 }
 
-.enviar {
-  text-align: center;
-}
-
-.btn-enviar {
-  height: 49px;
-
-  background: linear-gradient(
-    270.82deg,
-    rgba(198, 0, 48, 0.84) 46.03%,
-    rgba(175, 15, 159, 0.1092) 95.57%
-  );
-  border: 0.5px solid;
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  font-family: Poppins;
+.card{
+  background-color: rgb(32, 29, 29);
+  border-color: chartreuse; 
   color: white;
-  font-weight: 600;
-  font-size: 18px;
-  padding-left: 20%;
-  padding-right: 20%;
+  border-style: solid;
+} 
+
+.boton{
+  
+background: linear-gradient(270.82deg, rgba(223, 0, 0, 0.84) 46.03%, rgba(175, 15, 159, 0.1092) 95.57%);
+border: 0.5px solid #61B0DC;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 8px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+color: #FFFFFF; 
 }
 
-.form-control {
-  color: white;
-  font-weight: 600;
-  background-color: #3a3636;
-}
 
+
+.carrito, .order-md-last{
+    font-weight: 600;
+    color: black;
+    background-color: #212529;
+}
 /** footer **/
 footer {
   font-family: "Poppins", sans-serif;
