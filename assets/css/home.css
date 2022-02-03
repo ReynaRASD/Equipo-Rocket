@@ -4,11 +4,12 @@
     font-family: 'Poppins', sans-serif;
 }
 header {
-    font-family: 'Poppins', sans-serif;
+    
     font-size: 23px;
     line-height: 4s0px;
     
 }
+
 
 
 
@@ -19,7 +20,7 @@ main .centro{
   font-weight: bolder;
   color: #da2969;
   text-align: center;
-  font-weight: 600;
+  
   
 }
 
@@ -37,26 +38,90 @@ main .pc {
 }
 
 
-main .btn-enviar {
+
+.texto {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-weight: bolder;
+  color: green;
+  text-align: center;
+  
+}
+
+
+.video{
+  border: 3px solid green;
+  height: 0%;
+  padding-bottom: 44.75%;
+  padding-right: 79.25%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;  
+  border-radius: 10px;
+} 
+
+.video iframe{
+position: absolute;
+top:0;
+left: 0;
+height: 100%;
+width: 100%; 
+border-radius: 10px;
+
+}
+
+.rtx{
+  border: 3px solid green;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+.contbot{
+  display: block;
+  
+  margin-top: 25px;
+  
+  
+}
+
+.botrtx{
   height: 49px;
-  background: linear-gradient(
-    270.82deg,
-    rgba(198, 0, 48, 0.84) 46.03%,
-    rgba(175, 15, 159, 0.1092) 95.57%
-  );
+  background: rgb(89,156,11);
+background: linear-gradient(113deg, rgba(89,156,11,1) 50%, rgba(0,0,0,1) 50%);
   border: 0.5px solid;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  font-family: Poppins;
   color: white;
-  font-weight: 600;
-  font-size: 18px;
-  padding-left: 20%;
-  padding-right: 20%;
-  margin-bottom: 10%;
-  margin-top: 10%;
-}
+  
+  
+  
+  
+  }
+
+  main .btn-enviar {
+    height: 49px;
+    background: linear-gradient(
+      270.82deg,
+      rgba(198, 0, 48, 0.84) 46.03%,
+      rgba(175, 15, 159, 0.1092) 95.57%
+    );
+    border: 0.5px solid;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-family: Poppins;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+
+
+
+
 
 
 /** footer **/
