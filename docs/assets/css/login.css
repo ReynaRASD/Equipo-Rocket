@@ -12,9 +12,10 @@ header {
 }
 
 .titulo{
-    text-align: center;
-    color: #da2969; 
-    font-weight: 600; 
+  text-align: center;
+  color: #da2969; 
+  font-weight: 600; 
+  margin-top: 2%;
 }
 
 .login {
@@ -22,7 +23,7 @@ header {
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: 600;
-  color:rgb(32, 28, 28);
+  color:white;
 }
 
 main {
@@ -33,39 +34,42 @@ main {
   text-align: center;
   margin-top: 20px;
   font-size: 20px;
-  color: rgb(223, 205, 205);
+  
 }
 
 
 
-.mb-3{
-    color: white;
+main .mb-3{
+  
     font-size: 20px;
     margin-top: 30px;
 } 
 
-#exampleDropdownFormEmail2{
-    width: 350px;
-    height: 36.88px;
-    background: #131212;
-    border: 1px solid ;
-    box-sizing: border-box;
-    border-radius: 8px;
-    color: rgb(255, 254, 254);
+main .mb-3 #exampleInputEmail1{
+ 
+  border: 1px solid rgba(255, 255, 255, 0.91);
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 1200;
+  font-size: 20px;
+  margin: 0 auto;
+  background: #3a3636;
+ 
 }
 
-#exampleDropdownFormPassword2{
-    width: 350px;
-height: 36.88px;
-background: #131212;
-border: 1px solid rgba(34, 29, 29, 0.91);
-box-sizing: border-box;
-border-radius: 8px;
-color: rgb(255, 244, 244);
+main .mb-3 #exampleInputPassword1{
+  background: #3a3636;
+  border: 1px solid rgba(255, 255, 255, 0.91);
+  box-sizing: border-box;
+  border-radius: 8px;
+  
+  width: 1200;
+  font-size: 20px;
+  margin: 0 auto;
+  font-weight: 600;
 }
 
-
-.boton{
+.btn{
 height: 40px;
 width: 180px;
 
@@ -82,22 +86,14 @@ font-size: 25px;
 color: #FFFFFF; 
 
 text-align: center;
-
+margin: 0 auto;
 }
 
+.unete{
+    text-align: center;
+    font-size: 0.70cm;
+} 
 
-
-section button{
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(270.82deg, rgba(198, 0, 48, 0.84) 46.03%, rgba(175, 15, 159, 0.1092) 95.57%);
-    border: 0.5px solid #05496d;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 28px;
-    color: white;
-    }
 
     /** footer **/
 footer {
