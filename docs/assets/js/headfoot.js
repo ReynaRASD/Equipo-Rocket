@@ -32,11 +32,11 @@ function cargarHeadFoot(){
             </a>
 
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" data-bs-popper="none">
-              <li><a class="dropdown-item text-white bg-dark" href="../recomendacion.html">Recomendación</a>
+              <li><a class="dropdown-item text-white bg-dark" href="recomendacion.html">Recomendación</a>
               </li>
-              <li><a class="dropdown-item text-white bg-dark" href="../equipos.html#alta">Gama Alta</a></li>
-              <li><a class="dropdown-item text-white bg-dark" href="../equipos.html#media">Gama Media</a></li>
-              <li><a class="dropdown-item text-white bg-dark" href="../equipos.html#baja">Gama Baja</a></li>
+              <li><a class="dropdown-item text-white bg-dark" href="equipos.html#alta">Gama Alta</a></li>
+              <li><a class="dropdown-item text-white bg-dark" href="equipos.html#media">Gama Media</a></li>
+              <li><a class="dropdown-item text-white bg-dark" href="equipos.html#baja">Gama Baja</a></li>
             </ul>
 
           </li>
