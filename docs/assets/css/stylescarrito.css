@@ -203,3 +203,9 @@ footer .text-icono3 {
     animation-timing-function: ease-in;
   }
 }
+
+#mapi {
+  margin: 10px;
+  width: 450px;
+  height: 450px;
+}
