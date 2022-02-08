@@ -4,14 +4,15 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/recomendacion.css">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS ///-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Login</title>
+    <title>Recomendacion</title>
   </head>
 <body class="bg-dark">
+
   <header style="margin: 0px;">
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
       <div class="container-fluid">
@@ -25,7 +26,7 @@
           <ul style="padding-left: 70px;" class="navbar-nav">
             <li class="nav-item">
               <a style="padding-right: 20px;" class="nav-link active text-white bg-dark" aria-current="page"
-                href="docs/index.html">Home</a>
+                href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a style="padding-right: 20px;" class="nav-link text-white bg-dark"
@@ -66,58 +67,112 @@
     </nav>
   </header>
 
-  <main>
-    <h1 class="titulo">Iniciar Sesión</h1>
-    <form class="login">
+<main class="bg-dark">
 
-      <div class="row mb-3">
-        <div class="col-lg-12">
-        <label for="exampleInputEmail1" class="form-label">Email:</label>
-        <input type="email" id="exampleInputEmail1" class="form-control text-white" placeholder="nombre@ejemplo.com" aria-describedby="emailHelp">
-      </div>
-      </div>
-      <div class="row mb-3">
-        <div class="col-lg-12">
-        <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
-        <input type="password" class="form-control text-white" id="exampleInputPassword1">
-      </div>
-      </div>
-      <div class="row mb-3 form-check">
-        <div class="col-lg-12">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
-      </div>
-      </div>
-      <button type="submit" class="btn btn-primary boton">Entrar</button>
 
-      <p id="unete">¿No tienes una cuenta? <front style="color: #DA2969;"></front></p>
-
-      <p id="unete"><front style="color: #DA2969;"><a style="color: #DA2969;" href="registro.html">Únete gratis</a></front></p>
-
-    </form>
-  </main>
-
-    <footer style="margin: 0px;" class="footer bg-dark">
-    
-      <div class="col-md-4 d-flex align-items-center">
-        <p class="text-rocket text-center">© 2022 Equipo Rocket</p>
+  <div class="row">
+    <div class="col">
+      <div class="bg-dark">
+        <a>
+          <p class="text-comentario">¿No sabes qué computadora escoger?</p>
+          <p class="text-comentario">Nosotros te ayudamos, solo selecciona tu presupuesto y ocupación a continuación.</p>
+        </a>
       </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+
+
+<a>
+  <p class= "text-ask">¿Cuál es tu presupuesto?</p>
+</a>
+<div class="col-md-4 tam">
+<button type="button" id="baja" class="m-5 btn">Menos de $25, 000</button></div>
+<div class="col-md-4 tam">
+<button type="button" id="media" class="m-5 btn">$25, 000 - $45, 000</button></div>
+<div class="col-md-4 tam">
+<button type="button" id="alta" class="m-5 btn">Mas de $45, 000</button></div>
+
+</div>
+  
+
+  <div class="row mt-5">
+      <a>
+        <p class= "text-ask">¿A qué te dedicas?</p>
+      </a>
+
+      <div class="col-md-3 tam"><button type="button" id="baja" class="m-3 btn">Estudiante</button></div>
+      <div class="col-md-3 tam"><button type="button" id="media" class="m-3 btn">Programador</button></div>
+      <div class="col-md-3 tam"><button type="button" id="alta" class="m-3 btn">Diseñador</button></div>
+      <div class="col-md-3 tam"><button type="button" id="alta" class="m-3 btn">Arquitecto</button></div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-4 tam"><button type="button" id="alta" class="m-3 btn">Gamer</button></div>
+    <div class="col-md-4 tam"><button type="button" id="baja" class="m-3 btn">Administrador</button></div>
+    <div class="col-md-4 tam"><button type="button" id="media" class="m-3 btn">Ingeniero</button></div>
+
+</div>
+
+<div class="row">
+
+
+    <div class="col-md-6 tam"><button type="button" id="baja" class="m-3 btn">Oficinista</button></div>
+    <div class="col-md-6 tam"><button type="button" id="baja" class="m-3 btn">Uso personal</button></div>
+
+</div>
+
+
+
+  <div class="row">
+    <div class="col mb-5">
+    <div class="bg-dark">
+    <button type="button" onclick="" id="resultado">Consulta</button>
+    </div>
+    </div>
+  </div>
+
+<!--
+<div class="row">
+  <div class="col">
+    <div class="bg-dark">
+      <a>
+        <p class="text-answer"><a class="direccion" href=""></a></p>
+      </a>
+    </div>
+  </div>
+</div>
+-->
+
+</main>
+
+
+
+<footer style="margin: 0px;" class="footer bg-dark">
     
-      <ul class="nav justify-content-end list-unstyled d-flex">
-    
-        <li class="ms-3 figma"><a class="text-icono1"
-            href="https://www.figma.com/file/a1sA5a7ZghgSQnh4fBYfPF/ArtWare-Mockup-2.0?node-id=28%3A86"><i
-              class="fab fa-figma" aria-hidden="true"></i>
-          </a></li>
-        <li class="ms-3 git"><a class="text-icono2" href="https://github.com/ReynaRASD/Equipo-Rocket"><i
-              class="fab fa-github" aria-hidden="true"></i></a></li>
-        <li class="ms-3 lin"><a class="text-icono3" href="https://www.linkedin.com/"><i class="fab fa-linkedin"
-              aria-hidden="true"></i>
-          </a></li>
-    
-      </ul>
-    
-    </footer>
+  <div class="col-md-4 d-flex align-items-center">
+    <p class="text-rocket text-center">© 2022 Equipo Rocket</p>
+  </div>
+
+  <ul class="nav justify-content-end list-unstyled d-flex">
+
+    <li class="ms-3 figma"><a class="text-icono1"
+        href="https://www.figma.com/file/a1sA5a7ZghgSQnh4fBYfPF/ArtWare-Mockup-2.0?node-id=28%3A86"><i
+          class="fab fa-figma" aria-hidden="true"></i>
+      </a></li>
+    <li class="ms-3 git"><a class="text-icono2" href="https://github.com/ReynaRASD/Equipo-Rocket"><i
+          class="fab fa-github" aria-hidden="true"></i></a></li>
+    <li class="ms-3 lin"><a class="text-icono3" href="https://www.linkedin.com/"><i class="fab fa-linkedin"
+          aria-hidden="true"></i>
+      </a></li>
+
+  </ul>
+
+</footer>
            
         
           <script src="https://kit.fontawesome.com/9392ec639d.js"></script>
