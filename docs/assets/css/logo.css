@@ -1,0 +1,39 @@
+
+#background-logo {
+    display: flex;
+    height: 75px;
+    /* max-width: 30%; */
+    background-image: linear-gradient(
+        to right,
+        orangered,
+        orange,
+        gold,
+        lightgreen,
+        cyan,
+        dodgerblue,
+        mediumpurple,
+        hotpink,
+        orangered);
+    background-size: 110vw;
+
+    /* Efectos de animación, a menor cantidad de tiempo mayor velocidad de cambio */
+    animation: sliding 120s linear infinite;
+
+}
+
+@keyframes sliding {
+    to {
+        background-position: -2000vw;
+    }
+}
+
+#logo-letras {
+    /* display: block; */
+    /* height: 20px; */
+    height: 50%;
+    /* max-width: 100%; */
+}
+
+#logo-relleno {
+    height: 20px;
+}

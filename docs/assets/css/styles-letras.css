@@ -1,0 +1,99 @@
+
+@keyframes sliding {
+	to {
+		background-position: -2000vw;
+	}
+}
+
+/* 
+Notas:
+    - Los siguientes estilos de letras contienen solo colores, no tamaños ni familia de tipografía 
+    - Para evitar bugs en los estilos de letras con animaciones (arcoíris, por ejemplo), si se empieza con un color también se debe terminar con el mismo color. 
+*/
+
+
+.letras-arcoiris {
+	color: white;
+    /* Convierte el texto a mayúsculas */
+/* 	text-transform: uppercase; */
+	background-image: linear-gradient(
+		to right,
+        /* Colores: https://www.w3schools.com/cssref/css_colors.asp */
+		orangered,
+		orange,
+		gold,
+		lightgreen,
+		cyan,
+		dodgerblue,
+		mediumpurple,
+		hotpink,
+		orangered);
+	background-size: 110vw;
+    /* Tipos de animación: linear, ease, ease-in, ease-out */
+    /* A menor cantidad de segundos, más rápida la animación */
+	animation: sliding 30s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.letras-estilo1 {
+    color: white;
+    /* Convierte el texto a mayúsculas */
+/* 	text-transform: uppercase; */
+	background-image: linear-gradient(
+		to left,
+        /* Colores: https://www.w3schools.com/cssref/css_colors.asp */
+        PaleVioletRed,
+        hotpink,
+		pink,
+        slateBlue,
+		purple,
+        PaleVioletRed);
+	background-size: 110vw;
+    /* Tipos de animación: linear, ease, ease-in, ease-out */
+    /* A menor cantidad de segundos, más rápida la animación */
+	animation: sliding 60s ease infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.letras-estilo2 {
+    color: white;
+    /* Convierte el texto a mayúsculas */
+/* 	text-transform: uppercase; */
+	background-image: linear-gradient(
+		to left,
+        /* Colores: https://www.w3schools.com/cssref/css_colors.asp */
+        OrangeRed,
+        Crimson,
+        red,
+        orange,
+        gold,
+        OrangeRed);
+	background-size: 110vw;
+    /* Tipos de animación: linear, ease, ease-in, ease-out */
+    /* A menor cantidad de segundos, más rápida la animación */
+	animation: sliding 30s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.letras-estilo3 {
+    color: white;
+    /* Convierte el texto a mayúsculas */
+/* 	text-transform: uppercase; */
+	background-image: linear-gradient(
+		to left,
+        /* Colores: https://www.w3schools.com/cssref/css_colors.asp */
+        DarkViolet,
+        rgb(255, 0, 85),
+        Fuchsia,
+        DeepPink,
+        DarkViolet);
+	background-size: 110vw;
+    /* Tipos de animación: linear, ease, ease-in, ease-out */
+    /* A menor cantidad de segundos, más rápida la animación */
+	animation: sliding 45s ease-in-out infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
