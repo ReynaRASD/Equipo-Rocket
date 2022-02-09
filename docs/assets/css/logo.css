@@ -2,7 +2,6 @@
 #background-logo {
     display: flex;
     height: 75px;
-    /* max-width: 30%; */
     background-image: linear-gradient(
         to right,
         orangered,
@@ -25,6 +24,10 @@
     to {
         background-position: -2000vw;
     }
+}
+
+#logo-completo {
+    height: auto;
 }
 
 #logo-letras {
