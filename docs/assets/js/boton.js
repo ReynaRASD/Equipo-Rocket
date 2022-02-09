@@ -1,25 +1,7 @@
-/* 
-Object = function(
-    
-)myScript};
-
-Object.addEventListener("click", mostrarMensaje);
-
-
- */
-/* 
-let $boton = document.getElementById("boton");
-
-$boton.addEventListener = ("click", () => {
-    let texto = `<p>Luis</p>`;
-    textoOculto.appendChild(texto);
-});
- */
-
 
 var mostrarMensaje = () => {
     textoOculto.innerHTML = `<div class="card m-3 text-white border-0 bg-dark">
-    <h1 class="titulo">Bien hecho</h2>
+    <h1 class="titulo letras-estilo3">Bien hecho</h2>
     <div class="card-body">
       <p>
         Jessie: Prepárense para los problemas. <br> James: Y más vale que teman. Jessie: Para proteger al mundo de la
