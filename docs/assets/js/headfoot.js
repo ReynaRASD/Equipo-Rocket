@@ -60,16 +60,6 @@ function cargarHeadFoot(){
   </nav>`;
   */
 
-
-  /* Iba dentro de background-logo:
-      <img src="assets/img/logo-solo.png" alt="logo">
-      <div class="d-flex flex-column">
-      <img src="assets/img/logo-relleno.png" alt="logo" id="logo-relleno">
-      <img src="assets/img/logo-letras.png" alt="logo" id="logo-letras">
-      <img src="assets/img/logo-relleno.png" alt="logo" id="logo-relleno">
-      </div>
-  */
-
   // Nueva propuesta de menú versión 2
 
     menu.innerHTML =     
