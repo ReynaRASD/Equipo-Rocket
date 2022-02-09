@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/stylescarrito.css">
+
+    <title>Carrito</title>
+  </head>
+<body class="bg-dark" onload="cargarHeadFoot()">
+  <header style="margin: 0px;" id ="menu">
+
+  </header>
+
+    <main>
+      <h1 class="titulo">Mi carrito</h1>
+
+      <div  class="carrito d-flex justify-content-center" >
+        <div class="col-md-5 col-lg-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Producto</h6>
+                <small class="text-muted">Descripción</small>
+              </div>
+              <span class="text-muted">$</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Producto</h6>
+                <small class="text-muted">Descripción</small>
+              </div>
+              <span class="text-muted">$</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Producto</h6>
+                <small class="text-muted">Descripción</small>
+              </div>
+              <span class="text-muted">$</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Producto</h6>
+                <small class="text-muted">Descripción</small>
+              </div>
+              <span class="text-muted">$</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (MXN)</span>
+              <strong>$</strong>
+            </li>
+          </ul>
+      
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class=" card form-control" placeholder="Código de Promoción">
+              <button type="submit" class="boton btn-secondary">Comprar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <h1 class="titulo">Dirección de envío</h1>
+      <div  class="carrito d-flex justify-content-center" >
+        <div class="col-md-5 col-lg-4">
+          <form class="card p-2">
+            <div class="input-group">
+              <input id="autocomplete" placeholder="Ingresa tu dirección" class=" card form-control" type="text"/>
+              <div id='mapi'></div>
+              <button class="boton btn-secondary justify-content-center" onclick="miUbicacion()">Obtener ubicación</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    
+    <footer style="margin: 0px;" class="footer bg-dark" id="piepagina">
+        
+    </footer>
+    <script src="./assets/js/headfoot.js"></script>
+    <script src="./assets/js/maps.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrPZOMvbdb6qzeZE_FFjWtrcUuF7c49CA&libraries=places&callback=inicializar&language=es&region=MX" async defer></script>
+    <script src="https://kit.fontawesome.com/9392ec639d.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
