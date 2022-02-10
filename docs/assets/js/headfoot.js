@@ -60,20 +60,13 @@ function cargarHeadFoot(){
   </nav>`;
   */
 
-
   // Nueva propuesta de menú versión 2
 
     menu.innerHTML =     
     `<nav class="navbar navbar-expand-lg navbar-light bg-dark mt-1">
     <div class="container-fluid justify-content-between ps-0">
-    <div id="background-logo"> 
-      <img src="assets/img/logo-solo.png" alt="logo">
-      <div class="d-flex flex-column">
-      <img src="assets/img/logo-relleno.png" alt="logo" id="logo-relleno">
-      <img src="assets/img/logo-letras.png" alt="logo" id="logo-letras">
-      <img src="assets/img/logo-relleno.png" alt="logo" id="logo-relleno">
-      </div>
-      
+    <div id="background-logo" class="ms-3"> 
+    <img src="assets/img/logo-completo.png" alt="logo" id="logo-completo">
     </div>
       
       <button class="navbar-toggler text-white bg-white" type="button" data-bs-toggle="collapse"
@@ -82,17 +75,17 @@ function cargarHeadFoot(){
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end fw-bolder mt-4" id="navbarNavDropdown">
-        <ul style="padding-left: 15px;" class="navbar-nav text-center">
-          <li class="nav-item">
+        <ul style="padding-left: 5px;" class="navbar-nav text-center">
+          <li class="nav-item ps-3">
             <a class="nav-link active text-white bg-dark wrapper effect-underline" aria-current="page"
               href="index.html">Inicio</a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item ps-3">
             <a class="nav-link text-white bg-dark wrapper effect-underline" href="login.html">Mi Cuenta</a>
           </li>
 
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown ps-3">
             <a class="nav-link dropdown-toggle text-white bg-dark wrapper effect-underline2"
               href="equipos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true">Productos</a>
 
@@ -105,16 +98,16 @@ function cargarHeadFoot(){
             </ul>
             </li>
 
-          <li class="nav-item">
+          <li class="nav-item ps-3">
             <a class="nav-link text-white bg-dark wrapper effect-underline" href="acerca.html">Nosotros</a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item ps-3">
             <a class="nav-link text-white bg-dark wrapper effect-underline"
               href="contacto.html">Contacto</a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item ps-3">
             <a class="nav-link" href="carrito.html"><img src="assets/img/carro3.png"
                 width="50px" height="50px"></a>
           </li>
