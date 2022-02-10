@@ -266,7 +266,7 @@ cursor: pointer;
 .formulario__grupo-correcto .formulario__validacion-estado{
   color: green;
   opacity: 1;
-
+  
 }
 
 .formulario__grupo-correcto .formulario__input{
