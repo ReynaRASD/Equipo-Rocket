@@ -1,46 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 /*css*/
 
-/* 2 feb*/
 body {
-  background-color:#212529;
   font-family: "Poppins", sans-serif;
 }
 
 header {
-  font-family: "Poppins", sans-serif;
   font-size: 23px;
   line-height: 4s0px;
-}
-
-footer {
-  font-family: "Poppins", sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
 }
 
 main {
   min-height: 70vh;
 }
 
-
 .titulo {
-  color: #da2969;
   text-align: center;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .contacto {
-  margin: 15px 20% 15px 20%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin: 0 20% 0 20%;
   font-size: 20px;
   font-weight: 600;
 }
 
 #nombre, #email, #mensaje{
+  color:white;
   background: #3a3636;
-  color: white;
 }
 
 .enviar {
@@ -67,147 +54,108 @@ main {
   padding-right: 20%;
 }
 
+
+
+/* ---------  Estilos para individules ------- */
+
+.formulario__label{
+  display: block;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.formulario__grupo-input{
+  position: relative;
+}
+
 .form-control {
-  color: white;
+  color:white;
   font-weight: 600;
   background-color: #3a3636;
+  border: 2px solid transparent;
 }
 
-/** footer **/
-footer {
-  font-family: "Poppins", sans-serif;
-
-  padding: 1%;
-}
-footer ul a {
-  margin-right: 50px;
+.formulario__input:focus{
+  border: 2px solid #0ABBB5;
+  outline: none;
+  box-shadow: 2px 0px 15px rgba(163,163,163, 0.4);
 }
 
-footer p {
-  margin-left: 50px;
+.formulario__input-error{
+  color: white;
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none; 
 }
 
-footer .text-rocket {
-  color: rgb(212, 38, 102);
-  font-size: 20px;
-  font-weight: bolder;
-}
-footer .text-icono1 {
-  color: darkviolet;
-
-  font-size: 30px;
-}
-footer .text-icono2 {
-  color: cyan;
-  font-size: 30px;
-}
-footer .text-icono3 {
-  color: deeppink;
-  font-size: 30px;
+.formulario__input-error-activo{
+  display: block;
 }
 
-.figma {
-  -ms-transform-origin: top center;
-  transform-origin: top center;
-  animation-name: fig;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
+.formulario__validacion-estado{
+  position: absolute;
+  align-items: center;
+  color:white;
+  bottom: 12px;
+  z-index: 100;
+  font-size: 16px;
+  opacity: 0;
 }
 
-@keyframes fig {
-  20% {
-    -webkit-transform: rotate3d(0, 0, 1, 15deg);
-    transform: rotate3d(0, 0, 1, 15deg);
-  }
-  40% {
-    -webkit-transform: rotate3d(0, 0, 1, -10deg);
-    transform: rotate3d(0, 0, 1, -10deg);
-  }
-  60% {
-    -webkit-transform: rotate3d(0, 0, 1, 5deg);
-    transform: rotate3d(0, 0, 1, 5deg);
-  }
-  80% {
-    -webkit-transform: rotate3d(0, 0, 1, -5deg);
-    transform: rotate3d(0, 0, 1, -5deg);
-  }
-  100% {
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-    transform: rotate3d(0, 0, 1, 0deg);
-  }
+.formulario__mensaje{
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  height: 45px;
+  margin-bottom: 15px;
+  line-height: 45px;
+  background: #bb2929;
+  border-radius: 5px;
+  display: none;
 }
 
-.git {
-  animation-name: git;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
+.formulario__mensaje-activo{
+  display: block;
 }
 
-@keyframes git {
-  20% {
-    -webkit-transform: rotate3d(0, 0, 1, 15deg);
-    transform: rotate3d(0, 0, 1, 15deg);
-  }
-  40% {
-    -webkit-transform: rotate3d(0, 0, 1, -10deg);
-    transform: rotate3d(0, 0, 1, -10deg);
-  }
-  60% {
-    -webkit-transform: rotate3d(0, 0, 1, 5deg);
-    transform: rotate3d(0, 0, 1, 5deg);
-  }
-  80% {
-    -webkit-transform: rotate3d(0, 0, 1, -5deg);
-    transform: rotate3d(0, 0, 1, -5deg);
-  }
-  100% {
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-    transform: rotate3d(0, 0, 1, 0deg);
-  }
+.formulario__mensaje-exito{
+  font-size: 14px;
+  color: #4FFE01;
+  display: none;
 }
 
-.lin {
-  backface-visibility: visible;
-  animation-name: lin;
-  animation-duration: 1.5s;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
+.formulario__mensaje-exito-activo{
+  display: block;
 }
-@keyframes lin {
-  0% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #e00000;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #e00000;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 2px solid #e00000;
+}
+
+
+@media only screen and (max-width: 899px){
+  .formulario__validacion-estado{
+    margin-left: 90%;
   }
-  40% {
-    -webkit-transform: perspective(400px) translate3d(0, 0, 150px)
-      rotate3d(0, 1, 0, -190deg);
-    transform: perspective(400px) translate3d(0, 0, 150px)
-      rotate3d(0, 1, 0, -190deg);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  50% {
-    -webkit-transform: perspective(400px) translate3d(0, 0, 150px)
-      rotate3d(0, 1, 0, -170deg);
-    transform: perspective(400px) translate3d(0, 0, 150px)
-      rotate3d(0, 1, 0, -170deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  80% {
-    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
-    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  100% {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+} 
+
+@media only screen and (min-width: 900px){
+  .formulario__validacion-estado{
+    margin-left: 96%;
   }
 }
