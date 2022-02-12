@@ -22,7 +22,7 @@
     </header>
 
 <!--registro-->
-  <div class="formulario" id="formulario" class="bg-dark"> 
+  <form class="formulario" id="formulario" class="bg-dark"> 
     
     <div id="Registro" class="text-center px-lg-5 pt-lg-4 pb-lg-3 p-4">Registro</div>
 
@@ -88,20 +88,21 @@
                <p class = "formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
         </div>
 
-          <!--Mensaje -->
-        <div class="row mb-3 text-center formulario__mensaje" id="formulario__mensaje">
-               <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
-        </div>
+         
 
       </div>
 
           <!--Boton Registro-->
            <div class="formulario__grupo formulario__grupo-btn-enviar registrar col-md-12 mb-3 px-lg-5 pt-lg-4 pb-lg-3 p-4 text-center">
               <button type="submit" class="formulario__btn" value="Registrar" id="registrar">Registrar</button>
-              <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>  
+              <p class="formulario__mensaje-exito text-center" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>  
            </div>
+
+          <!--Mensaje -->
+           <div class="formulario__mensaje" id="formulario__mensaje"> <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p></div>
     </div>
-  </div>
+
+  </form>
 
 
   <!--footer-->
@@ -109,10 +110,8 @@
   </footer>
   
         <!--Script-->
-
-          <script src="./assets/js/validacionDeRegistroprueba.js"></script>
+          <script src="./assets/js/validacionDeRegistroJ.js"></script>
           <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-          <script src="./assets/js/validacionDeRegistro.js"></script>
           <script src="./assets/js/headfoot.js"></script>
           <script src="https://kit.fontawesome.com/9392ec639d.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

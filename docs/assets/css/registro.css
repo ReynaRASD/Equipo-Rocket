@@ -200,7 +200,7 @@ cursor:pointer;
 
 .formulario__validacion-estado{
   position: absolute;
-
+  
   opacity: 0;
 }
 
@@ -218,16 +218,15 @@ cursor:pointer;
   display: block;
 }
 
-
-
-.formulario__mensaje p{
-  padding-top: 20px;
+.formulario__mensaje{
   color: red;
   display: none;
+
 }
 
 .formulario__mensaje-activo{
   display: block;
+  
 }
 
 .formulario__btn {
@@ -263,6 +262,8 @@ cursor: pointer;
 }
 
 
+
+
 .formulario__grupo-correcto .formulario__validacion-estado{
   color: green;
   opacity: 1;
@@ -282,4 +283,8 @@ cursor: pointer;
 
 .formulario__grupo-incorrecto .formulario__input{
   border: 3px solid red;
+}
+
+.formulario__grupo-incorrecto .formulario__label{
+  color: red;
 }
