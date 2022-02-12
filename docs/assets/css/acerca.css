@@ -29,15 +29,11 @@ main {
 
 .img-border-rounded{
   border-radius: 50%;
-  /* border: 3px solid white; */
 }
 
 
 .esconder {
   background: transparent;
   border: none !important;
-  
-  /* border: 0px solid black; */
 }
-
 
