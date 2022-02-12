@@ -86,8 +86,8 @@ function cargarHeadFoot(){
           </li>
 
             <li class="nav-item dropdown ps-3">
-            <a class="nav-link dropdown-toggle text-white bg-dark wrapper effect-underline2"
-              href="equipos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true">Productos</a>
+            <a class="nav-link dropdown-toggle text-white bg-dark wrapper effect-underline2
+               id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true">Productos</a>
 
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" data-bs-popper="none">
               <li><a class="dropdown-item text-white bg-dark fw-bolder wrapper effect-underline" href="recomendacion.html">Recomendación</a>
