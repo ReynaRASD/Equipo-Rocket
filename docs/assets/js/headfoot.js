@@ -122,7 +122,7 @@ function cargarHeadFoot(){
   piepagina.innerHTML =       
   `<div class="d-flex  justify-content-between">
     <div class="col-md-4 d-flex">
-      <p class="text-rocket  ps-0 pe-1 fw-bolder">© 2022 <br>Equipo Rocket</p>
+      <p class="text-rocket  ps-0 pe-1 fw-bolder letras-estilo22">© 2022 <br>Equipo Rocket</p>
     </div>
   
     <ul class="col-md-8 nav justify-content-end list-unstyled d-flex pe-5 flex-nowrap align-items-center">
@@ -145,7 +145,7 @@ function cargarHeadFoot(){
   </div>`;
 }
 
-/* Al recargar la página, la posición de la pantalla se mueve hasta arriba. Esto evita inconsistencias. */
+// Al recargar la página, la pantalla regresa a su posición original. 
 if (history.scrollRestoration) {
   history.scrollRestoration = 'manual';
 } else {

@@ -1,20 +1,16 @@
 var immg;
-let num = 0;
-
+let isOff = false;
 
 function cambiar(){
     
-    
-    if(num == 0){
-        num += 1;
-        immg = "https://images.nvidia.com/geforce-com/international/images/watch-dogs-legion/watch-dogs-legion-dxr-ray-tracing-001-on.jpg";
-        document.getElementById('botonaso').innerHTML = "<strong>RTX OFF<strong/>"
-        
-
+    if(isOff == true){
+        immg = "./assets/img/demo-rtx-on.jpg";
+        document.getElementById('botonaso').innerHTML = `<strong>RTX ON<strong/>` 
+        isOff = false;
     }else{
-        num -= 1;
-        immg = "https://images.nvidia.com/geforce-com/international/images/watch-dogs-legion/watch-dogs-legion-dxr-ray-tracing-001-off.jpg";
-        document.getElementById('botonaso').innerHTML = `<strong>RTX ON<strong/>`       
+        immg = "./assets/img/demo-rtx-off.jpg";
+        document.getElementById('botonaso').innerHTML = "<strong>RTX OFF<strong/>"   
+        isOff = true;  
     }
    document.getElementById("watch").src = immg;
-}
+} 
