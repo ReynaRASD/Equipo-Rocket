@@ -98,3 +98,143 @@ Notas:
 	-webkit-text-fill-color: transparent;
 }
 
+.letras-estilo4 {
+    color: white;
+    /* Convierte el texto a mayúsculas */
+/* 	text-transform: uppercase; */
+	background-image: linear-gradient(
+		to left,
+        /* Colores: https://www.w3schools.com/cssref/css_colors.asp */
+        Crimson,
+		DarkOrange,
+		OrangeRed,
+		FireBrick,
+		Gold,
+        Crimson);
+	background-size: 110vw;
+    /* Tipos de animación: linear, ease, ease-in, ease-out */
+    /* A menor cantidad de segundos, más rápida la animación */
+	animation: sliding 45s ease-in-out infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.letras-estilo5 {
+    color: white;
+    /* Convierte el texto a mayúsculas */
+/* 	text-transform: uppercase; */
+	background-image: linear-gradient(
+		to left,
+        /* Colores: https://www.w3schools.com/cssref/css_colors.asp */
+		lightgreen,
+		Darkgreen,
+		lime,
+		Greenyellow,
+        lightgreen);
+	background-size: 110vw;
+    /* Tipos de animación: linear, ease, ease-in, ease-out */
+    /* A menor cantidad de segundos, más rápida la animación */
+	animation: sliding 45s ease-in-out infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.letras-estilo6 {
+    color: white;
+    /* Convierte el texto a mayúsculas */
+/* 	text-transform: uppercase; */
+	background-image: linear-gradient(
+		to left,
+        /* Colores: https://www.w3schools.com/cssref/css_colors.asp */
+		lightpink,
+		MediumVioletRed,
+		DeepPink,
+		Plum,
+        lightpink);
+	background-size: 110vw;
+    /* Tipos de animación: linear, ease, ease-in, ease-out */
+    /* A menor cantidad de segundos, más rápida la animación */
+	animation: sliding 45s ease-in-out infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.letras-estilo7 {
+    color: white;
+    /* Convierte el texto a mayúsculas */
+/* 	text-transform: uppercase; */
+	background-image: linear-gradient(
+		to left,
+        /* Colores: https://www.w3schools.com/cssref/css_colors.asp */
+		Turquoise,
+		Teal,
+		DeepSkyBLue,
+		SkyBlue,
+        Turquoise);
+	background-size: 110vw;
+    /* Tipos de animación: linear, ease, ease-in, ease-out */
+    /* A menor cantidad de segundos, más rápida la animación */
+	animation: sliding 45s ease-in-out infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.letras-estilo8 {
+    color: white;
+    /* Convierte el texto a mayúsculas */
+/* 	text-transform: uppercase; */
+	background-image: linear-gradient(
+		to left,
+        /* Colores: https://www.w3schools.com/cssref/css_colors.asp */
+		OrangeRed,
+		Chocolate,
+		Gold,
+		Tomato,
+        OrangeRed);
+	background-size: 110vw;
+    /* Tipos de animación: linear, ease, ease-in, ease-out */
+    /* A menor cantidad de segundos, más rápida la animación */
+	animation: sliding 45s ease-in-out infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.letras-estilo9 {
+    color: white;
+    /* Convierte el texto a mayúsculas */
+/* 	text-transform: uppercase; */
+	background-image: linear-gradient(
+		to left,
+        /* Colores: https://www.w3schools.com/cssref/css_colors.asp */
+		Orchid,
+		MediumVioletRed,
+		Magenta,
+		Plum,
+        Orchid);
+	background-size: 110vw;
+    /* Tipos de animación: linear, ease, ease-in, ease-out */
+    /* A menor cantidad de segundos, más rápida la animación */
+	animation: sliding 45s ease-in-out infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.letras-estilo10 {
+    color: white;
+    /* Convierte el texto a mayúsculas */
+/* 	text-transform: uppercase; */
+	background-image: linear-gradient(
+		to left,
+        /* Colores: https://www.w3schools.com/cssref/css_colors.asp */
+		DarkTurquoise,
+		DodgerBlue,
+		Cyan,
+		LightSkyBlue,
+        DarkTurquoise);
+	background-size: 110vw;
+    /* Tipos de animación: linear, ease, ease-in, ease-out */
+    /* A menor cantidad de segundos, más rápida la animación */
+	animation: sliding 45s ease-in-out infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
