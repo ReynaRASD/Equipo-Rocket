@@ -12,10 +12,18 @@ header {
 }
 
 .titulo{
-  text-align: center;
-  color: #da2969; 
-  font-weight: 600; 
-  margin-top: 2%;
+  font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-size: 60px;
+line-height: 70px;
+font-weight: 600; 
+text-align: center;
+color: white;
+background-image: linear-gradient( to left, DarkViolet, rgb(255, 0, 85), rgb(238, 255, 0), DeepPink, DarkViolet);
+background-size: 110vw;
+animation: sliding 45s ease-in-out infinite;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; 
 }
 
 .login {
@@ -239,4 +247,105 @@ footer {
     margin: 20px 15% 20px 15%;
   }
 
+} 
+
+
+
+/*Estilos de validacion */
+
+
+
+.formulario__validacion-estado{
+  position: absolute; 
+
+  opacity: 0;
+ /* color: red; */
+} 
+ 
+.formulario__label{ 
+  cursor: pointer;
+} 
+
+.formulario__grupo-input{
+  position: relative; 
 }
+
+.formulario__input-error{
+  font-size: 12px; 
+  margin-bottom: 0; 
+  display: none;
+}  
+
+.formulario__input-error{
+  color: red;
+} 
+
+.formulario__input-error-activo{
+  display: block;
+}  
+
+
+.formulario__validacion-estado{
+  position:absolute;
+  right: 10px;
+  bottom: 15px; 
+  z-index: 100; 
+  font-size: 16px; 
+  opacity: 0;
+}  
+
+
+.formulario__grupo-terminos,
+.formulario__mensaje,
+.formulario__grupo-btn-enviar{
+  grid-column: span 2;
+} 
+
+.formulario__mensaje{
+  height: 40px; 
+  line-height: 40px; 
+  background: #f66060; 
+  padding: 0 15px; 
+  border-radius: 3px; 
+  display: none;
+}   
+
+.formulario__mensaje p {
+  margin: 0;
+  
+}  
+
+.formulario__mensaje-exito-activo{
+  display: block;
+}
+
+.formulario__mensaje-activo{
+  display: block;
+}
+
+
+.formulario__grupo-correcto .formulario__validacion-estado{
+color: green; 
+opacity: 1; 
+} 
+
+
+.formulario__grupo-correcto .formulario__input{
+  color: 3px solid green; 
+  
+}
+
+
+.formulario__grupo-incorrecto .formulario__input{
+  color:  red; 
+  
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado{
+color: red; 
+opacity: 1;
+} 
+
+.formulario__grupo-incorrecto .formulario__input{
+border: 3px solid red
+} 
