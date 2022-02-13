@@ -12,11 +12,15 @@ header {
 #Registro{
 font-family: 'Poppins', sans-serif;
 font-style: normal;
-font-weight: normal;
 font-size: 60px;
 line-height: 70px;
 font-weight: 600;
-color: #DA2969;
+color: white;
+background-image: linear-gradient( to left, DarkViolet, rgb(255, 0, 85), rgb(238, 255, 0), DeepPink, DarkViolet);
+background-size: 110vw;
+animation: sliding 45s ease-in-out infinite;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 };
 
 
@@ -34,6 +38,7 @@ border: 1px solid rgba(255, 255, 255, 0.91);
 box-sizing: border-box;
 border-radius: 8px;
 transition: .3s ease all;
+font-family: 'Poppins', sans-serif;
 }
 
 
