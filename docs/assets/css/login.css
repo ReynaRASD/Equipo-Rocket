@@ -11,13 +11,12 @@ header {
     
 }
 
-.titulo{
+#titulo{
   font-family: 'Poppins', sans-serif;
 font-style: normal;
 font-size: 60px;
 line-height: 70px;
 font-weight: 600; 
-text-align: center;
 color: white;
 background-image: linear-gradient( to left, DarkViolet, rgb(255, 0, 85), rgb(238, 255, 0), DeepPink, DarkViolet);
 background-size: 110vw;
