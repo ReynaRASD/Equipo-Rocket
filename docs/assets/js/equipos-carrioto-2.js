@@ -7,15 +7,17 @@ console.log(titulo); */
 //esta funcion se carga cuando se inicia la pagina y agrega los objetos al carrito
 function cargarCarrito(){
     
-    //const carritoDeComprasFila = document.createElement("div");
-    let carrito = JSON.parse(sessionStorage.getItem("carrito"));
-    console.log("aqui sam", carrito);
+    const carritoDeComprasFila = document.createElement("div");
+   // let carrito = JSON.parse(sessionStorage.getItem("carrito"));
+    let carrito = sessionStorage.getItem("carrito");
+    //console.log("aqui snake ", carrito);
     
     
-    const elementoTitulo = $contenidoDelCarrito.getElementsByClassName('.shoppingCartItemTitle');
+    //const elementoTitulo = $contenidoDelCarrito.getElementsByClassName('.shoppingCartItemTitle');
     
-/*     console.log(elementoTitulo);
-    for(let i = 0; i < carrito.length; i++){
+    //console.log(elementoTitulo);
+    
+ /*    for(let i = 0; i < carrito.length; i++){
         if(carrito[i].innerText == titulo){
             console.log("titulo es " + carrito[i].innerText);
         }
@@ -23,12 +25,14 @@ function cargarCarrito(){
     }
  */
 
+    /*
     for (let i = 0; i < carrito.length; i++) {
         let carritoDeComprasFila = document.createElement("div")
         carritoDeComprasFila.innerHTML = carrito[i];
         $contenidoDelCarrito.appendChild(carritoDeComprasFila);
         
     }
+    */
 
 /*     carrito.forEach(item => {
         let carritoDeComprasFila = document.createElement("div")
@@ -37,8 +41,8 @@ function cargarCarrito(){
         console.log(carritoDeComprasFila);
         console.log(carrito[item]);
     }); */
-    /* carritoDeComprasFila.innerHTML = carrito;
-    $contenidoDelCarrito.appendChild(carritoDeComprasFila); */
+     carritoDeComprasFila.innerHTML = carrito;
+    $contenidoDelCarrito.appendChild(carritoDeComprasFila); 
     
     const botonesBorrar = $contenidoDelCarrito.querySelectorAll('.buttonDelete');
     botonesBorrar.forEach(quitarElemento => {

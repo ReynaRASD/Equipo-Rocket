@@ -58,14 +58,14 @@ function aniadirAlCarrito(titulo, varo, imagen){
 
 arrayCarrito=[...arrayCarrito,carritoPCS];
 
-/* var aus = sessionStorage.getItem("carrito"); */
+ var aus = sessionStorage.getItem("carrito"); 
 
-/* if (aus == null){
+ if (aus == null){
     sessionStorage.setItem("carrito", carritoPCS)
 }else{
     sessionStorage.setItem("carrito", aus + carritoPCS );
-} */
+} 
 
-sessionStorage.setItem("carrito", JSON.stringify(arrayCarrito));
+//sessionStorage.setItem("carrito", JSON.stringify(arrayCarrito));
 }
 
