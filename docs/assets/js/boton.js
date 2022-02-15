@@ -4,7 +4,9 @@ let isHidden = true;
 var mostrarMensaje = () => {
   if(isHidden === true) {
       textoOculto.innerHTML = `<div class="card m-3 text-white border-0 bg-dark">
-      <h1 class="titulo letras-estilo3">Bien hecho</h2>
+      <h1 class="titulo letras-estilo3">Bien hecho</h1> 
+      <div class="d-flex justify-content-center align-items-center">
+      <img class="d-inline-flex" src="./assets/img/pikachu-oculto.png"> 
       <div class="card-body">
         <p>
           Jessie: Prepárense para los problemas. <br> James: Y más vale que teman. <br> Jessie: Para proteger al mundo de la
@@ -14,6 +16,9 @@ var mostrarMensaje = () => {
           luchar! <br> Meowth: ¡Meowth! ¡Así es! <br> Wobbuffet: ¡Wobbuffet!
         </p>
       </div>
+      </div>
+      
+      
     </div>`;
     isHidden = false;
   } else {
