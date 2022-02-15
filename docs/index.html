@@ -1,202 +1,323 @@
-
 <!doctype html>
 <html lang="es">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/home.css">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Home</title>
-  </head>
+  <link rel="stylesheet" href="./assets/css/home.css">
+
+  <link rel="stylesheet" href="./assets/css/logo.css">
+  <link rel="stylesheet" href="./assets/css/headfoot.css">
+  <link rel="stylesheet" href="./assets/css/styles-letras.css">
+  <link rel="stylesheet" href="./assets/css/styles-animaciones.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-32x32.png">
+
+  <!-- Bootstrap CSS ///-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>Inicio</title>
+</head>
+
 <body class="bg-dark" onload="cargarHeadFoot()">
-  <header style="margin: 0px;" id ="menu">
-  </header> 
 
-  <img src="assets/img/logo.jpg"  class="w-38"> 
+  <header style="margin: 0px;" id="menu">
+  </header>
 
-        <carousel class="bg-dark">
-            <div id="carouselExampleCaptions" class="carousel slide pointer-event" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item">
-                    <a href="../recomendacion.html"><img src="assets/img/carrusel1.jpg" class="d-block w-100" alt="..."></a>
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5 class="text-white fw-bold fs-2">Gama Alta</h5>
-                      <p class="fw-bolder">Adquiere tu Pc gamer de alta gama que poseen características de diseño, estructura y eficacia que harán de ella una máquina muy eficaz.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="../recomendacion.html"><img src="assets/img/fotogamamedia.jpg" class="d-block w-100" alt="..."></a>
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5 class="text-white fw-bold fs-2">Gama Media</h5>
-                      <p class="fw-bolder">Si quieres más poder es para una buena causa.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item active">
-                    <a href="../recomendacion.html"><img src="assets/img/fotogamabaja.jpg" class="d-block w-100" alt="..."></a>
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5 class="text-white fw-bold fs-2">Gama Baja</h5>
-                      <p class="fw-bolder">Ideal para estudiantes.</p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+ 
+
+    <carousel class="bg-dark carousel">
+      <div id="carouselExampleCaptions" class="carousel slide pointer-event" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+        
+
+          <div class="carousel-item active">
+
+            <div class="row align-items-center">
+              <div class="col-3">
+
               </div>
-        </carousel>
+              <div class="col-6">
+              <img src="assets/img/logo-letras.png" class="img-fluid" id="background-logo" alt="...">
+            </div>
+            <div class="col-3">
 
-       
-
-        <main class="container text-white">
-          
-        
-
-
-        <div class="row mt-5">
-    
-          <div class="col-md-6">
-            <a href="../equipos.html#baja"> <img
-                src="assets/img/bajahome.jpg"
-                class="pc m-5" alt="PC"></a>
-          </div>
-
-          <div class="col-md-6">
-            <h2 class="centro"> <strong> Gama baja </strong></h2>
-            <p class="centro1">
-              La gama baja es perfecta para quien quiera experimentar cualquier videojuego con una resolución de 1080p y 60fps, de igual manera te servirá para desempeñar cualquier tipo de trabajo en diseño,  realizar tareas de la escuela y alguno que otro stream.
-            </p>
-    
-          </div>
-    
-        </div>
-
-
-
-
-
-
-        <div class="row mt-5">
-          <div class="col-md-6">
-            <a href="../equipos.html#media"> <img
-                src="assets/img/mediahome.jpg"
-                class="pc m-5" alt="PC"></a>
-          </div>
-    
-          <div class="col-md-6">
-            <h2 class="centro"> <strong> Gama media </strong></h2>
-            <p class="centro1">
-              Si quieres tener una PC de oficina pero con el suficiente poder para jugar uno que otro juego en tus tiempos libres, amaras la gama media, es costeable y nunca te quedara mal. 
-            </p>
-    
-          </div>
-         
-        </div>
-
-
-
-
-        <div class="row mt-5">
-    
-          <div class="col-md-6">
-            <a href="../equipos.html#alta"> <img 
-                src="assets/img/altahome.jfif"
-                class="pc m-5 img-fluid" alt="PC"></a>
-          </div>
-
-          <div class="col-md-6">
-            <h2 class="centro"> <strong> Gama alta </strong></h2>
-            <p class="centro1">
-              La gama alta te dejara jugar y hacer sin problema lo que desees. Los mejores PC de gama alta tienen potentes procesadores de Intel y AMD, de octava y novena generación, así como tarjetas de vídeo de alto nivel de Nvidia.
-            </p>
-    
-          </div>
-    
-        </div>
-        
-
-      
-        
-        <div>
-          <h2 class="texto text-center "> <strong> Experimenta el RT con nuestros equipos </strong></h2>
-          <p class="centro1">NVIDIA RTX es la plataforma más avanzada para ray tracing y las tecnologías de IA que están revolucionando las formas en que jugamos y creamos. Más de 150 de los mejores juegos y aplicaciones utilizan RTX para ofrecer gráficos realistas con un rendimiento increíblemente rápido o nuevas funciones de IA de vanguardia, como NVIDIA DLSS y NVIDIA Broadcast. RTX es el nuevo estándar.
-            
-          </p>
-  
-        </div>
-        
-        
-          <div class="col-5 video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/UEOqsGV666Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             </div>
 
-            
-            <h2 class="texto text-center "> <strong> Comparacion RTX ON vs RTX OFF </strong></h2>
-            <div>
-            <img id="watch" class="rtx img-fluid" src="https://images.nvidia.com/geforce-com/international/images/watch-dogs-legion/watch-dogs-legion-dxr-ray-tracing-001-off.jpg" width="100%" height="auto" alt="watch dogs">
-          </div>
+            <div class="row align-items-center">
+              <div class="col-2">
 
-            <div class="contbot text-center">
-              <button id="botonaso" class="btn btn-primary botrtx" onclick="cambiar()" type="button"><strong> RTX ON </strong></button>
+              </div>
+              <div class="col-8">
+              <p class="text-white fw-bolder tamanio-coment">
+                Build to play es una pagina que te ofrece los mejores equipos gaming, clasificados en gamas especificas para el usuario.
+              </p>
+            </div>
+            <div class="col-2">
+
+            </div>
             </div>
 
-        <div>
-          <h2 class="texto text-center"> <strong> Prueba la tegnología DLSS de NVIDIA</strong></h2>
-          <p class="centro1">Disfruta del ray tracing y de muy altas resoluciones con tecnología DLSS. Utiliza la renderización avanzada de IA para producir una calidad de imagen comparable a la resolución nativa (y a veces, incluso mejor), mientras que, de manera convencional, representa solo una fracción de los píxeles. Las técnicas avanzadas de retroalimentación temporal brindan detalles de imagen increíblemente nítidos y una estabilidad mejorada con cada cuadro.
-            
-          </p>
-  
+
+          </div>
+
+
+
+          <div class="carousel-item">
+
+            <div class="row align-items-center">
+              <div class="col-2">
+
+              </div>
+              <div class="col-3">
+
+                <h5 class="titulo letras-estilo3 fw-bolder tamanio-titulo">Gama Alta</h5>
+                <p class="text-white fw-bolder tamanio-coment">Adquiere tu Pc gamer de alta gama que poseen
+                  características de diseño, estructura y eficacia que harán de ella una máquina muy eficaz.</p>
+
+              </div>
+              <div class="col-5">
+                <a href="../recomendacion.html"><img src="assets/img/fotogamaalta.jpeg" class="img-fluid" alt="..."></a>
+              </div>
+              
+              <div class="col-2">
+
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+          <div class="carousel-item">
+
+            <div class="row align-items-center">
+              <div class="col-2">
+
+              </div>
+              <div class="col-3">
+
+                <h5 class="titulo letras-estilo3 fw-bolder tamanio-titulo">Gama Media</h5>
+                <p class="text-white fw-bolder tamanio-coment">Si quieres más poder es para una buena causa.</p>
+
+              </div>
+              <div class="col-5">
+                <a href="../recomendacion.html"><img src="assets/img/fotogamamedia.jpg" class="img-fluid d-inline"
+                    alt="..."></a>
+              </div>
+              
+              <div class="col-2">
+
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="carousel-item">
+
+
+            <div class="row align-items-center">
+              <div class="col-2">
+
+              </div>
+              <div class="col-3">
+
+                <h5 class="titulo letras-estilo3 fw-bolder tamanio-titulo">Gama Baja</h5>
+                <p class="text-white fw-bolder tamanio-coment">Ideal para estudiantes.</p>
+
+              </div>
+              <div class="col-5">
+                <a href="../recomendacion.html"><img src="assets/img/fotogamabaja.jpg" class="img-fluid" alt="..."></a>
+              </div>
+              
+              <div class="col-2">
+
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    
+    </carousel>
+
+    <main>
+
+<br><br><br><br>
+<p class="titulo letras-estilo3 fw-bolder tamanio-titulo">¿Quieres saber más?</p>
+<p class="text-white fw-bolder tamanio-coment">¡Sigue bajando!</p>
+
+    <div class="container text-white">
+
+      <div class="row mt-5">
+
+        <div class="col-md-6">
+          <a href="../equipos.html#baja"> <img src="assets/img/bajahome.jpg" class="rtx img-fluid" alt="PC"></a>
         </div>
 
-        <div class="col-5 video">  
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/BCcN8kCD90A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="col-md-6">
+          <h2 class="texto"> <strong> Gama baja </strong></h2>
+          <p class="centro1">
+            La gama baja es perfecta para quien quiera experimentar cualquier videojuego con una resolución de 1080p y
+            60fps, de igual manera te servirá para desempeñar cualquier tipo de trabajo en diseño, realizar tareas de la
+            escuela y alguno que otro stream.
+          </p>
+
         </div>
-         <!-- <img id="watch" src="https://images.nvidia.com/aem-dam/Solutions/geforce/ces/rtx-slider/cyberpunk-2077-vending-machine-rtx-off-2560.jpg" width="100%" height="auto" alt="watch dogs">
+
+      </div>
+
+
+
+
+
+
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <a href="../equipos.html#media"> <img src="assets/img/mediahome.jpg" class="rtx img-fluid" alt="PC"></a>
+        </div>
+
+        <div class="col-md-6">
+          <h2 class="texto"> <strong> Gama media </strong></h2>
+          <p class="centro1">
+            Si quieres tener una PC de oficina pero con el suficiente poder para jugar uno que otro juego en tus tiempos
+            libres, amaras la gama media, es costeable y nunca te quedara mal.
+          </p>
+
+        </div>
+
+      </div>
+
+
+
+
+      <div class="row mt-5">
+
+        <div class="col-md-6">
+          <a href="../equipos.html#alta"> <img src="assets/img/altahome.jfif" class=" rtx img-fluid" alt="PC"></a>
+        </div>
+
+        <div class="col-md-6">
+          <h2 class="texto"> <strong> Gama alta </strong></h2>
+          <p class="centro1">
+            La gama alta te dejara jugar y hacer sin problema lo que desees. Los mejores PC de gama alta tienen potentes
+            procesadores de Intel y AMD, de octava y novena generación, así como tarjetas de vídeo de alto nivel de
+            Nvidia.
+          </p>
+
+        </div>
+
+      </div>
+
+
+
+
+      <div>
+        <h2 class="texto text-center "> <strong> Experimenta el RT con nuestros equipos </strong></h2>
+        <p class="centro1">NVIDIA RTX es la plataforma más avanzada para ray tracing y las tecnologías de IA que están
+          revolucionando las formas en que jugamos y creamos. Más de 150 de los mejores juegos y aplicaciones utilizan
+          RTX para ofrecer gráficos realistas con un rendimiento increíblemente rápido o nuevas funciones de IA de
+          vanguardia, como NVIDIA DLSS y NVIDIA Broadcast. RTX es el nuevo estándar.
+
+        </p>
+
+      </div>
+
+
+      <div class="col-5 video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UEOqsGV666Q" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+
+      <h2 class="texto text-center "> <strong> Comparacion RTX ON vs RTX OFF </strong></h2>
+      <div>
+        <img id="watch" class="rtx img-fluid"
+          src="./assets/img/demo-rtx-on.jpg"
+          width="100%" height="auto" alt="watch dogs">
+      </div>
+
+      <div class="contbot text-center">
+        <button id="botonaso" class="btn btn-primary botrtx" onclick="cambiar()" type="button"><strong> RTX ON
+          </strong></button>
+      </div>
+
+      <div>
+        <h2 class="texto text-center"> <strong> Prueba la tegnología DLSS de NVIDIA</strong></h2>
+        <p class="centro1">Disfruta del ray tracing y de muy altas resoluciones con tecnología DLSS. Utiliza la
+          renderización avanzada de IA para producir una calidad de imagen comparable a la resolución nativa (y a veces,
+          incluso mejor), mientras que, de manera convencional, representa solo una fracción de los píxeles. Las
+          técnicas avanzadas de retroalimentación temporal brindan detalles de imagen increíblemente nítidos y una
+          estabilidad mejorada con cada cuadro.
+
+        </p>
+
+      </div>
+
+      <div class="col-5 video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BCcN8kCD90A" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <!-- <img id="watch" src="https://images.nvidia.com/aem-dam/Solutions/geforce/ces/rtx-slider/cyberpunk-2077-vending-machine-rtx-off-2560.jpg" width="100%" height="auto" alt="watch dogs">
 
         <img id="comparison-img2" src="https://images.nvidia.com/aem-dam/Solutions/geforce/ces/rtx-slider/cyberpunk-2077-vending-machine-rtx-on-2560.jpg" width="100%" height="auto" alt="CYBERPUNK 2077 RTX ON">  -->
 
-        
-        
-
-        
-        
 
 
 
 
-            <div class="row enviar">
-              <button class="btn-enviar"><a style="text-decoration: none; color: white;" href="../equipos.html" >Descubre nuestros equipos</a></button>
-            </div>
 
-            
 
-           </main>
-           
-      
-       
 
-  
-          <footer style="margin: 0px;" class="footer bg-dark" id="piepagina">          
-          </footer>
-                  <script src="./assets/js/headfoot.js"></script>
-                  <script src="assets/js/home.js"></script>
-                  <script src="https://kit.fontawesome.com/9392ec639d.js"></script>
-                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        
-                  
-                    
-                  </body>
-        </html>
+
+
+         <div class="row" style="margin: 0 auto;">
+        <button class="btn-enviar"><a style="text-decoration: none; color: white;" href="../equipos.html">DESCUBRE
+            NUESTROS PRODUCTOS</a></button>
+          </div>
+
+
+    </div>
+  </main>
+
+
+
+
+
+  <footer style="margin: 0px;" class="footer bg-dark" id="piepagina">
+  </footer>
+
+
+  <script src="https://kit.fontawesome.com/9392ec639d.js"></script>
+  <script src="./assets/js/headfoot.js"></script>
+  <script src="./assets/js/home.js"></script>
+  <script src="https://kit.fontawesome.com/9392ec639d.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
