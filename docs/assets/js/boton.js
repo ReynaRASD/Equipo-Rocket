@@ -22,7 +22,7 @@ var mostrarMensaje = () => {
   }
 }
 
-
+/* Se cancela, no hace falta. Se hace desde html.
 function cambiarImagen(persona, tipoImagen) {
   let imgSource;
 
@@ -36,5 +36,5 @@ function cambiarImagen(persona, tipoImagen) {
     document.getElementById("profile_" + persona).src= imgSource;
   }
 }
-
+ */
 
