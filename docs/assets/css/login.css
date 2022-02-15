@@ -156,14 +156,7 @@ margin: 0 auto;
   grid-column: span 2;
 } 
 
-.formulario__mensaje{
-  height: 40px; 
-  line-height: 40px; 
-  background: #f66060; 
-  padding: 0 15px; 
-  border-radius: 3px; 
-  display: none;
-}   
+ 
 
 .formulario__mensaje p {
   margin: 0;
