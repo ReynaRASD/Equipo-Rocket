@@ -25,7 +25,8 @@
   </header>
 
   <main>
-    <div id="titulo" class="text-center px-lg-5 pt-lg-4 pb-lg-3 p-4"> Iniciar Sesión </div>
+    <div id="titulo"> <h1 class="titulo letras-estilo3 fw-bolder" style="text-align: center;">Iniciar Sesión</h1>
+    </div>
     <form class="login novalidate formulario" id="formulario"> 
       
      <!--Email-->
@@ -64,11 +65,14 @@
 
       </div> 
       <div class="formulario__mensaje" id="formulario__mensaje">
-        
+        <p><i class="fas fa-exclamation-triangle"></i> <b>Error: </b> Por favor rellena el formulario correctamente. Ningún campo debe quedar vacío. </p>
       </div> 
-    
-      <button type="submit" class="btn btn-primary boton formulario__grupo formulario__grupo-btn-enviar">Entrar</button>
-      
+      <div>
+      <button type="submit" class="btn btn-primary boton formulario__grupo formulario__grupo-btn-enviar" value="entrar">Entrar</button>
+      <p class="formulario_mensaje-exito" id="formulario_mensaje-exito">El mensaje se ha enviado con éxito</p>
+     
+    </div>
+     
       <p id="unete">¿No tienes una cuenta? <front style="color: #DA2969;"></front></p>
 
       <p id="unete"><front style="color: #DA2969;"><a style="color: #DA2969;" href="registro.html">Únete gratis</a></front></p>

@@ -11,19 +11,7 @@ header {
     
 }
 
-#titulo{
-  font-family: 'Poppins', sans-serif;
-font-style: normal;
-font-size: 60px;
-line-height: 70px;
-font-weight: 600; 
-color: white;
-background-image: linear-gradient( to left, DarkViolet, rgb(255, 0, 85), rgb(238, 255, 0), DeepPink, DarkViolet);
-background-size: 110vw;
-animation: sliding 45s ease-in-out infinite;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent; 
-}
+
 
 .login {
   margin: 20px 30% 20px 30%;
@@ -131,6 +119,7 @@ margin: 0 auto;
   display: none;
 }  
 
+
 .formulario__input-error{
   color: red;
 } 
@@ -150,27 +139,29 @@ margin: 0 auto;
 }  
 
 
-.formulario__grupo-terminos,
-.formulario__mensaje,
-.formulario__grupo-btn-enviar{
-  grid-column: span 2;
-} 
-
- 
-
-.formulario__mensaje p {
-  margin: 0;
-  
-}  
-
-.formulario__mensaje-exito-activo{
-  display: block;
-}
 
 .formulario__mensaje-activo{
   display: block;
+} 
+
+.formulario__mensaje-exito{
+  padding-top: 20px;
+  font-size: 14px;
+  color: green;
+  display: none;
 }
 
+.formulario__mensaje{
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  height: 45px;
+  margin-bottom: 15px;
+  line-height: 45px;
+  background: #bb2929;
+  border-radius: 5px;
+  display: none;
+}
 
 .formulario__grupo-correcto .formulario__validacion-estado{
 color: green; 
@@ -197,3 +188,11 @@ opacity: 1;
 .formulario__grupo-incorrecto .formulario__input{
 border: 3px solid red
 } 
+
+.formulario__mensaje{
+  color: red;
+  display: none;
+
+} 
+
+
