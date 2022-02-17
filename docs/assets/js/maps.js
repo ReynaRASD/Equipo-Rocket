@@ -86,7 +86,8 @@ marker.addListener('dragend', function () {
 
 //Código de funcion para obtener ubicación por botón
 function miUbicacion(){
-  function localizacion(posicion){
+  alert("Esta en construccion")
+  /* function localizacion(posicion){
     lat = posicion.coords.latitude;
     lng = posicion.coords.longitude;
     ubicarMarcador(lat,lng);
@@ -95,11 +96,11 @@ function miUbicacion(){
   function errorDeUbicacion(){
     alert("Error al obtener tu ubicación")
   }
-  navigator.geolocation.getCurrentPosition(localizacion,errorDeUbicacion);
+  navigator.geolocation.getCurrentPosition(localizacion,errorDeUbicacion); */
 }
 // Apartir de coordenadas separadas obtener la dirección
 function obtenerDireccion(lati,longi){
-  let url = 'https://maps.googleapis.com/maps/api/geocode/json?latlng=' + lati + ',' + longi + '&key=';
+  let url = 'https://maps.googleapis.com/maps/api/geocode/json?latlng=' + lati + ',' + longi + '&key=AIzaSyCrPZOMvbdb6qzeZE_FFjWtrcUuF7c49CA';
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
       if (xhr.readyState === 4){

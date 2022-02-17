@@ -10,7 +10,8 @@ $agregarTienda.forEach(agregarTienda => {
 function agregarAlClickear(event){
     const boton = event.target;
     const $pcs = boton.closest('.pcs');
-    
+    document.getElementById('anuncio-cart').classList.remove('none');
+    setTimeout(cambiarClase, 3000);
     const titulo = $pcs.querySelector('.titulo').textContent;
     const varo = $pcs.querySelector('.varo').textContent;
     const imagen = $pcs.querySelector('.imagen').src;
@@ -21,6 +22,9 @@ function agregarAlClickear(event){
     aniadirAlCarrito(titulo, varo, imagen);   
 }
 
+function cambiarClase(){
+    document.getElementById('anuncio-cart').classList.add('none');
+}
 function aniadirAlCarrito(titulo, varo, imagen){
     
     
@@ -59,11 +63,13 @@ function aniadirAlCarrito(titulo, varo, imagen){
 arrayCarrito=[...arrayCarrito,carritoPCS];
 
  var aus = sessionStorage.getItem("carrito"); 
-
+console.log("El valor de AUS" + aus);
  if (aus == null){
-    sessionStorage.setItem("carrito", carritoPCS)
+    sessionStorage.setItem("carrito", carritoPCS);
+    console.log("No se que hago parte 1" + sessionStorage.setItem("carrito", carritoPCS));
 }else{
-    sessionStorage.setItem("carrito", aus + carritoPCS );
+    sessionStorage.setItem("carrito", aus + carritoPCS);
+    console.log("No se que hago parte 2" + sessionStorage.setItem("carrito", aus + carritoPCS ));
 } 
 
 //sessionStorage.setItem("carrito", JSON.stringify(arrayCarrito));
