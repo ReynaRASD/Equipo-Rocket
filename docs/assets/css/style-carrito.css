@@ -28,8 +28,8 @@ main .card{
 
 main .boton{
   
-  height: 49px;
-
+  height: 80%;
+  width: 50%;
   background: linear-gradient(
     270.82deg,
     rgba(198, 0, 48, 0.84) 46.03%,
@@ -51,14 +51,17 @@ main .carrito{
   
     color: black;
     background-color: #212529;
-    
+    width: 70%;
 }
 
 #mapi {
   
-  width: 450px;
+  width: 90%;
   height: 300px;
   margin: 0 auto;
 }
 
 
+.inputs{
+  width: 80%;
+}

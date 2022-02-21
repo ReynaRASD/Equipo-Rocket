@@ -1,4 +1,4 @@
-!doctype html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,6 @@
 
     <!--css-->
    
-    <link rel="stylesheet" href="./assets/css/stylescarrito.css">
     <link rel="stylesheet" href="./assets/css/style-carrito.css">
     <link rel="stylesheet" href="./assets/css/logo.css">
     <link rel="stylesheet" href="./assets/css/headfoot.css">
@@ -111,61 +110,36 @@
 
 </section>
 <!-- Final de la seccion total total  -->
+
+
+
   <h1 class="titulo letras-estilo3 fw-bolder text-center">Dirección de envío:</h1>
 
-  <div  class="carrito d-flex justify-content-center" >
-    <div class="col-md-5 col-lg-4">
+  <div  class="carrito d-flex justify-content-center m-auto" >
+    <div class="m-auto">
       <form class="card p-2">
-        
         <div class="input-group">
-          
-            <div class="input-group fw-bolder m-auto">
-            <label for="referencias">Ingresa tu dirección:</label>
-            <input id="autocomplete" placeholder="Ingresa tu dirección" class="card form-control" id="direccion" type="text"/>  
-            </div>
-          
-            <div id='mapi' class="mt-3 mb-3">
-            </div>
-          
-
-          <div class="fw-bolder m-auto">
-            <label for="referencias">Referencias:</label>
-            <input autocomplete="off" class="card form-control" type="text" name="referencias" id="referencias" placeholder="Referencias"/>
+          <div class="input-group fw-bolder m-auto">
+            Ingresa tu dirección: 
+            <input id="autocomplete" placeholder="Ingresa tu dirección" class="card form-control inputs" type="text"/>
           </div>
+          
+          <div id='mapi' class="mt-3 mb-3 m-auto"></div>
+          
+          <div class="input-group fw-bolder m-auto">Referencias:
+            <input class="card form-control inputs" type="text"/></div>
             
-            <div class= "m-auto fw-bolder mt-3 col-8">
-        
-            <label for="calle">Calle:</label><input autocomplate="off" type="text" name="calle" id="calle" class="card form-control" placeholder="Ej. Cielito lindo"/>
-            <br/>
-            <label for="numeroexterior">Número exterior:</label>
-            <input autocomplate="off" type="number" name="numeroexterior" id="numeroexterior" class="card form-control" placeholder="Ej. 12"/>
-            <br/>
-            <label for="delegacion">Delegación/municipio:</label>
-            <input autocomplate="off" type="text" name="delegacion" id="delegacion" class="card form-control" placeholder="Ej. Nezahualcoyotl"/>
-            <br/>
-            <label for="codigo">Código postal:</label>
-            <input autocomplate="off" type="number" name="codigo" id="codigo" class="card form-control" placeholder="Ej. 30030"/>
-            <br/>
-            <label for="colonia">Colonia:</label>
-            <input autocomplate="off" type="text" name="colonia" id="colonia" class="card form-control" placeholder="Ej. Benito Juarez"/>
-            <br/>
-            <label for="pais">País:</label>
-            <input autocomplate="off" type="text" name="pais" id="pais" class="card form-control" placeholder="Ej. México"/>
-            <br/>
-            <label for="estado">Estado: </label>
-            <input autocomplate="off" type="text" name="estado" id="estado" class="card form-control" placeholder="Ej. Chiapas"/>
-            <br/>
-            <label for="ciudad">Ciudad:</label>
-            <input autocomplate="off" type="text" name="ciudad" id="ciudad" class="card form-control" placeholder="Ej. Oacaxa"/>
+            
+            <div class="input-group">
+          <button  style="margin: 0 auto;" class="mt-3 boton btn-secondary justify-content-center" onclick="miUbicacion()">Obtener ubicación</button>
+            </div>
 
-            <div>
-                <button  class="row mb-3 mt-3 boton btn-secondary m-auto p-2" onclick="miUbicacion()">Obtener ubicación</button>
-            </div>
-            </div>
-            
-            
-        </div> 
-      </form>
+    
+      </div>
+      </form> 
+    </div>
+</div>
+
 </main>
 
 
