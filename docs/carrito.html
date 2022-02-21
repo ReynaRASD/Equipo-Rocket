@@ -1,4 +1,4 @@
-!doctype html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,6 @@
 
     <!--css-->
    
-    <link rel="stylesheet" href="./assets/css/stylescarrito.css">
     <link rel="stylesheet" href="./assets/css/style-carrito.css">
     <link rel="stylesheet" href="./assets/css/logo.css">
     <link rel="stylesheet" href="./assets/css/headfoot.css">
@@ -111,50 +110,36 @@
 
 </section>
 <!-- Final de la seccion total total  -->
+
+
+
   <h1 class="titulo letras-estilo3 fw-bolder text-center">Dirección de envío:</h1>
 
-  <div  class="carrito d-flex justify-content-center" >
-    <div class="col-md-5 col-lg-4">
+  <div  class="carrito d-flex justify-content-center m-auto" >
+    <div class="m-auto">
       <form class="card p-2">
         <div class="input-group">
-          <div class="input-group fw-bolder">
+          <div class="input-group fw-bolder m-auto">
             Ingresa tu dirección: 
-            <input style="margin-left: 20px;" id="autocomplete" placeholder="Ingresa tu dirección" class="card form-control" type="text"/>
+            <input id="autocomplete" placeholder="Ingresa tu dirección" class="card form-control inputs" type="text"/>
           </div>
-          <div id='mapi' class="mt-3 mb-3"></div>
-          <div class="input-group fw-bolder">Referencias:
-            <input style="margin-left: 20px;" class="card form-control" type="text"/></div>
+          
+          <div id='mapi' class="mt-3 mb-3 m-auto"></div>
+          
+          <div class="input-group fw-bolder m-auto">Referencias:
+            <input class="card form-control inputs" type="text"/></div>
+            
+            
             <div class="input-group">
-          
-            <div class="justify-content-center">
-            <label for="calle">Calle:</label>
-            <input autocomplate="off" type="text" name="calle" id="calle" placeholder="Ej. Cielito lindo"/>
-            
-            <label for="numeroexterior">Número exterior:</label>
-            <input autocomplate="off" type="number" name="numeroexterior" id="numeroexterior" placeholder="Ej. 12"/>
-            
-            <label for="delegacion">Delegación/municipio:</label>
-            <input autocomplate="off" type="text" name="delegacion" id="delegacion" placeholder="Ej. Nezahualcoyotl"/>
-            
-            <label for="codigo">Código postal:</label>
-            <input autocomplate="off" type="number" name="codigo" id="codigo" placeholder="Ej. 30030"/>
-            
-            <label for="colonia">Colonia:</label>
-            <input autocomplate="off" type="text" name="colonia" id="colonia" placeholder="Ej. Benito Juarez"/>
-            
-            <label for="pais">País:</label>
-            <input autocomplate="off" type="text" name="pais" id="pais" placeholder="Ej. México"/>
-            
-            <label for="estado">Estado: </label>
-            <input autocomplate="off" type="text" name="estado" id="estado" placeholder="Ej. Chiapas"/>
-            
-            <label for="ciudad">Ciudad:</label>
-            <input autocomplate="off" type="text" name="ciudad" id="ciudad" placeholder="Ej. Oacaxa"/>
-            
-          </div>
-
-          
           <button  style="margin: 0 auto;" class="mt-3 boton btn-secondary justify-content-center" onclick="miUbicacion()">Obtener ubicación</button>
+            </div>
+
+    
+      </div>
+      </form> 
+    </div>
+</div>
+
 </main>
 
 
