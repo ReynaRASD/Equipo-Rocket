@@ -210,7 +210,8 @@ opacity: 1;
 
 .formulario__grupo-incorrecto .formulario__input{
 border: 3px solid red
-} 
+}  
+
 
 @media only screen and (max-width: 750px){
   .login{
