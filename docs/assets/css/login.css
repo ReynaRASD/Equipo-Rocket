@@ -14,7 +14,7 @@ header {
 #titulo{
   font-family: 'Poppins', sans-serif;
 font-style: normal;
-font-size: 60px;
+font-size: 50px;
 line-height: 70px;
 font-weight: 600; 
 color: white;
@@ -57,7 +57,6 @@ main .mb-3 #exampleInputEmail1{
   border: 1px solid rgba(255, 255, 255, 0.91);
   box-sizing: border-box;
   border-radius: 8px;
-  width: 1200;
   font-size: 20px;
   margin: 0 auto;
   background: #3a3636;
@@ -69,8 +68,6 @@ main .mb-3 #exampleInputPassword1{
   border: 1px solid rgba(255, 255, 255, 0.91);
   box-sizing: border-box;
   border-radius: 8px;
-  
-  width: 1200;
   font-size: 20px;
   margin: 0 auto;
   font-weight: 600;
@@ -102,7 +99,7 @@ margin: 0 auto;
 } 
 
 
-    /** footer **/
+  
 
 
 
@@ -214,3 +211,11 @@ opacity: 1;
 .formulario__grupo-incorrecto .formulario__input{
 border: 3px solid red
 } 
+
+@media only screen and (max-width: 750px){
+  .login{
+margin: 0 15% 0 15%;
+}
+}
+
+
