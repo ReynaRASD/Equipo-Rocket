@@ -1,53 +1,62 @@
-.item {
-  border: 2px solid #000;
-  padding: 10px;
-  border-radius: 20px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+/*css*/
+* {
+
+  font-family: "Poppins", sans-serif;
 }
 
-.item-title {
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 600;
+header {
+  font-family: "Poppins", sans-serif;
+  font-size: 23px;
+  line-height: 4s0px;
 }
 
-.item-image {
+main .list-group-item{
+  background-color: rgb(32, 29, 29); 
+  border-color: chartreuse; 
+  color: white; 
+  border-style: solid;
+}
+
+main .card{
+  background-color: rgb(32, 29, 29);
+  border-color: chartreuse; 
+  color: white;
+  border-style: solid;
+  
+} 
+
+main .boton{
+  
+  height: 49px;
+
+  background: linear-gradient(
+    270.82deg,
+    rgba(198, 0, 48, 0.84) 46.03%,
+    rgba(175, 15, 159, 0.1092) 95.57%
+  );
+  border: 0.5px solid;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  font-family: Poppins;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+
+main .carrito{
+  
+    color: black;
+    background-color: #212529;
+    
+}
+
+#mapi {
+  
+  width: 450px;
   height: 300px;
-  width: 100%;
-}
-
-.item-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 0px 15px;
-}
-
-.item-details > .item-price {
-  margin: 0;
-}
-
-/* ? SHOPPING CART */
-.shopping-cart-items {
-  padding: 20px 0px;
-}
-
-.shopping-cart-header {
-  border-bottom: 1px solid #ccc;
-}
-
-.shopping-cart-image {
-  max-width: 80px;
-  border-radius: 20px;
-}
-
-.shopping-cart-quantity-input {
-  max-width: 45px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background: #eee;
-  padding: 5px;
-}
-
-.shopping-cart-total {
-  min-height: 96px;
+  margin: 0 auto;
 }
