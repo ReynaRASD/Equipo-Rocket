@@ -57,15 +57,16 @@ main .centro{
   color: #da2969;
   text-align: center;
   
-  
 }
 
 main .centro1{
   text-align: center;
-  
-  
 }
 
+.centro1{
+  font-weight: bolder;
+  font-size: 18px;
+}
 
 
 .texto {

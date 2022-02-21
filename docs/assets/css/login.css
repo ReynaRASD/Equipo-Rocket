@@ -76,6 +76,11 @@ main .mb-3 #exampleInputPassword1{
   font-weight: 600;
 }
 
+#btn{
+font-size: 18px;
+font-weight: bolder;
+}
+
 .btn{
 height: 40px;
 width: 180px;
@@ -87,9 +92,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 8px;
 
 font-family: Poppins;
-font-style: normal;
-font-weight: 500;
-font-size: 25px;
 color: #FFFFFF; 
 
 text-align: center;
@@ -149,7 +151,9 @@ margin: 0 auto;
   opacity: 0;
 }  
 
-
+.enviar{
+  text-align: center;
+}
 /* .formulario__grupo-terminos,
 .formulario__mensaje,
 .formulario__grupo-btn-enviar{
