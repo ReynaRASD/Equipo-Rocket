@@ -317,3 +317,8 @@ function cambiarContador(event){
   }
   actualizarTotal();
 }
+
+function comprarBotonClick(){
+  $contenidoDelCarrito.innerHTML = '';
+  actualizarTotal();
+}  

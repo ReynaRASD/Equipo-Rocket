@@ -27,89 +27,82 @@
 
 
   <!-- Seccion del carrito -->
-  <h1 class="titulo letras-estilo3 fw-bolder text-center">Mi carrito</h1>
+ <h1 class="titulo letras-estilo3 fw-bolder text-center">Mi carrito</h1>
 
-  <section class="shopping-cart text-light">
-    <div class="container">
-        
-        <hr>
-        <div class="row">
-            <div class="col-6">
-                <div class="shopping-cart-header">
-                    <h6 class="fw-bolder">Producto</h6>
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="shopping-cart-header">
-                    <h6 class="text-truncate fw-bolder">Precio</h6>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="shopping-cart-header">
-                    <h6 class="fw-bolder">Cantidad</h6>
-                </div>
-            </div>
-        </div>
-        <!-- Carrito de compras pc  -->
-        <div class="contenidoDelCarrito">
-           
-        </div>
-        <!-- Final de carrito de compras pc -->
-
-        <!-- TOTAL -->
-        <div class="row fw-bolder">
-            <div class="col-12">
-                <div class="shopping-cart-total d-flex align-items-center">
-                    <p class="mb-0  col-2">Total</p>
-                    <p class=" mb-0 carrito-total">0</p>
-                    <div class="toast ml-auto bg-info " role="alert" aria-live="assertive" aria-atomic="true"
-                        data-delay="2000">
-                        <div class="toast-header">
-                            <span>✅</span>
-                            <strong class="mr-auto ml-1 text-secondary ">Elemento en el carrito</strong>
-                            <button type="button" class="ml-2 mb-1 close " data-dismiss="toast" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="toast-body text-white">
-                            Se aumentó correctamente la cantidad
-                        </div>
-                    </div>
-                    <div style="margin-left: 10px;"><button class="btn btn-success comprarButton" type="button" data-toggle="modal"
-                        data-target="#comprarModal">Comprar</button></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- TOTAL -->
-
-        <!-- Inicio de compra -->
-        <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Pronto recibirá su pedido</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Final de compra -->
+ <section class="shopping-cart text-light">
+   <div class="container">
 
 
-    </div>
+     <div class="row">
+       <div class="col-6">
+         <div class="shopping-cart-header">
+           <h6>Producto</h6>
+         </div>
+       </div>
+       <div class="col-2">
+         <div class="shopping-cart-header">
+           <h6 class="text-truncate">Precio</h6>
+         </div>
+       </div>
+       <div class="col-4">
+         <div class="shopping-cart-header">
+           <h6>Cantidad</h6>
+         </div>
+       </div>
+     </div>
+     <!-- Carrito de compras pc  -->
+     <div class="contenidoDelCarrito">
 
-</section>
-<!-- Final de la seccion total total  -->
+     </div>
+     <!-- Final de carrito de compras pc -->
+
+     <!-- TOTAL -->
+     <div class="row">
+       <div class="col-12">
+         <div class="shopping-cart-total d-flex align-items-center">
+           <p class="mb-0  ">Total</p>
+           <p class=" mb-0  baro carrito-total ">0$</p>
+
+           <!-- Buton que llama al madal -->
+           <button class="btn btn-success comprar comprarButton " type="button" data-bs-toggle="modal"
+             data-bs-target="#staticBackdrop" onclick="comprarBotonClick()">Comprar</button>
+
+
+
+           <!-- Modal -->
+           <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+             <div class="modal-dialog">
+               <div class="modal-content">
+                 <div class="modal-header">
+
+                   <h5 class="modal-title text-dark " id="comprarModalLabel"><strong> Gracias por su compra </strong>
+                   </h5>
+                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body text-dark">
+                   <strong>
+                     <p>Pronto recibirá su pedido <span>✅</span></p>
+                   </strong>
+                 </div>
+                 <div class="modal-footer">
+                   <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <!-- TOTAL -->
+
+   
+
+
+ </section>
+ <!-- Final de la Seccion del carrito  -->
 
 <main>
 
