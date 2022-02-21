@@ -74,7 +74,7 @@ main .mb-3 #exampleInputPassword1{
 }
 
 .btn{
-height: 40px;
+height: 50px;
 width: 180px;
 
 background: linear-gradient(270.82deg, rgba(14, 231, 6, 0.84) 46.03%, rgba(175, 15, 159, 0.1092) 95.57%);
@@ -85,12 +85,13 @@ border-radius: 8px;
 
 font-family: Poppins;
 font-style: normal;
-font-weight: 500;
-font-size: 25px;
+font-weight: 600;
+font-size: 800px;
 color: #FFFFFF; 
 
 text-align: center;
 margin: 0 auto;
+min-width: 100%;
 }
 
 .unete{
