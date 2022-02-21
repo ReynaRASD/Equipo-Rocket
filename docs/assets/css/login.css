@@ -26,7 +26,7 @@ animation: sliding 45s ease-in-out infinite;
 }
 
 .login {
-  margin: 20px 30% 20px 30%;
+  margin: 0 30% 0 30%;
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: 600;
@@ -217,5 +217,4 @@ border: 3px solid red
 margin: 0 15% 0 15%;
 }
 }
-
 
