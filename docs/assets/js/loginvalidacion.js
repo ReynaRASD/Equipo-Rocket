@@ -11,7 +11,7 @@ const expresiones = {
 
 const campos = {
     correo: false, 
-    password: false,  
+    password: false
 }
 
 const validarFormulario = (e) => { 
@@ -52,7 +52,7 @@ inputs.forEach((input) =>{
 formulario.addEventListener("submit", (e) =>{
   e.preventDefault();  
 
-  if(campos.correo && campos.password){ 
+  if(campos.email && campos.password){ 
       formulario.reset();  
       document.getElementById("formulario__mensaje-exito").classList.add("formulario__mensaje-exito-activo");
       setTimeout(() => {

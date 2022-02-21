@@ -1,5 +1,40 @@
 let lat, lng, coordenadas, autocomplete, map, myLatLng, marker, response, address;
 
+//Código de funcion para obtener ubicación por botón
+
+var ubi = document.getElementById('mapaubicacion');
+ubi.addEventListener("click", ()=>{
+  //alert("Esta en construccion")
+  
+   function localizacion(posicion){
+    lat = posicion.coords.latitude;
+    lng = posicion.coords.longitude;
+    
+    obtenerDireccion(lat,lng);
+    ubicarMarcador(lat,lng);
+    
+  }
+  
+  Navigator.geolocation.getCurrentPosition(localizacion,errorDeUbicacion); 
+  function errorDeUbicacion(){
+    alert("Error al obtener tu ubicación")
+  }
+
+// Apartir de coordenadas separadas obtener la dirección
+function obtenerDireccion(lati,longi){
+  let url = 'https://maps.googleapis.com/maps/api/geocode/json?latlng=' + lati + ',' + longi + '&key=AIzaSyCrPZOMvbdb6qzeZE_FFjWtrcUuF7c49CA';
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4){
+          response = JSON.parse(xhr.responseText);
+          document.getElementById('autocomplete').value = response.results[0].formatted_address;
+      }
+  }
+  xhr.open('GET', url);
+  xhr.send();
+  
+}});
+
 //Funcion para inicializar el autocompletado de direcciones
 function initAutocomplete(){
     autocomplete = new google.maps.places.Autocomplete(
@@ -61,6 +96,7 @@ function obtenerCoordenadas(){
             xhr.open('GET', url);
             xhr.send();
 }
+
 // Código para cambiar la ubicación del marker
 function ubicarMarcador(mylat,mylng){
   myLatLng = new google.maps.LatLng(mylat,mylng);
@@ -84,29 +120,4 @@ marker.addListener('dragend', function () {
 });
 }
 
-//Código de funcion para obtener ubicación por botón
-function miUbicacion(){
-  function localizacion(posicion){
-    lat = posicion.coords.latitude;
-    lng = posicion.coords.longitude;
-    ubicarMarcador(lat,lng);
-    obtenerDireccion(lat,lng);
-  }
-  function errorDeUbicacion(){
-    alert("Error al obtener tu ubicación")
-  }
-  navigator.geolocation.getCurrentPosition(localizacion,errorDeUbicacion);
-}
-// Apartir de coordenadas separadas obtener la dirección
-function obtenerDireccion(lati,longi){
-  let url = 'https://maps.googleapis.com/maps/api/geocode/json?latlng=' + lati + ',' + longi + '&key=';
-  var xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function() {
-      if (xhr.readyState === 4){
-          response = JSON.parse(xhr.responseText);
-          document.getElementById('autocomplete').value = response.results[0].formatted_address;
-      }
-  }
-  xhr.open('GET', url);
-  xhr.send();
-}
+

@@ -86,7 +86,7 @@ function cargarHeadFoot(){
           </li>
 
             <li class="nav-item dropdown ps-3">
-            <a class="nav-link dropdown-toggle text-white bg-dark wrapper effect-underline2
+            <a class="nav-link dropdown-toggle text-white bg-dark wrapper effect-underline2"
                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true">Productos</a>
 
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" data-bs-popper="none">
