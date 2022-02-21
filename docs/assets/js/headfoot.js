@@ -112,13 +112,13 @@ xhr.onreadystatechange = function() {
     if (xhr.readyState === 4){
         response = JSON.parse(xhr.responseText);
         document.getElementById('autocomplete').value = response.results[0].formatted_address;
-        descomponerDireccion(response.results[0].address_components);
+        //descomponerDireccion(response.results[0].address_components);
     }
 }
 xhr.open('GET', url);
 xhr.send();
 }
-
+/*
 function descomponerDireccion(array){
 document.getElementById('numext').value = '';
 document.getElementById('calle').value = '';
@@ -149,7 +149,7 @@ for (let i = 0; i < array.length; i++) {
   }
   
 }
-}
+}*/
 
 ///////////////////////
 function cargarHeadFoot(){

@@ -28,8 +28,8 @@ main .card{
 
 main .boton{
   
-  height: 49px;
-
+  height: 80%;
+  width: 50%;
   background: linear-gradient(
     270.82deg,
     rgba(198, 0, 48, 0.84) 46.03%,
@@ -51,12 +51,74 @@ main .carrito{
   
     color: black;
     background-color: #212529;
-    
+    width: 70%;
 }
 
 #mapi {
   
-  width: 450px;
+  width: 90%;
   height: 300px;
   margin: 0 auto;
+}
+
+
+.inputs{
+  width: 80%;
+}
+
+
+/*------------------- Otro styles*/
+
+.item {
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.item-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+.item-image {
+  height: 300px;
+  width: 100%;
+}
+
+.item-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px 15px;
+}
+
+.item-details > .item-price {
+  margin: 0;
+}
+
+/* ? SHOPPING CART */
+.shopping-cart-items {
+  padding: 20px 0px;
+}
+
+.shopping-cart-header {
+  border-bottom: 1px solid #ccc;
+}
+
+.shopping-cart-image {
+  max-width: 80px;
+  border-radius: 20px;
+}
+
+.shopping-cart-quantity-input {
+  max-width: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px;
+}
+
+.shopping-cart-total {
+  min-height: 96px;
 }

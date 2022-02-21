@@ -35,6 +35,10 @@ h1{
 
 }
 
+.container, .precio{
+  font-weight: bolder;
+}
+
 .compu1{
   border: 10px solid rgb(255, 81, 0);
   border-radius: 20px; 
@@ -83,6 +87,10 @@ h1{
     height: auto;
     border-radius: 20px;
 }
+ #agregar{
+  font-weight: bolder;
+ }
+
 .boton1 {
 background: linear-gradient(270.82deg, rgba(198, 0, 48, 0.84) 46.03%, rgba(175, 15, 159, 0.1092) 95.57%);
 border: 0.5px solid #61B0DC;
@@ -90,7 +98,6 @@ box-sizing: border-box;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 8px;
 font-style: normal;
-font-weight: bold;
 font-size: 20px;
 /* width: 20px; */
 color: #FFFFFF;
