@@ -1,48 +1,48 @@
-function lanza(){
+function lanza() {
   cargarHeadFoot();
   setTimeout(cargarCarrito(), 100);
-  setTimeout(miUbicacion(),200);
+  setTimeout(miUbicacion(), 200);
 }
 
 let lat, lng, coordenadas, autocomplete, map, myLatLng, marker, response, address;
 
 //Funcion para inicializar el autocompletado de direcciones
-function initAutocomplete(){
+function initAutocomplete() {
   autocomplete = new google.maps.places.Autocomplete(
-      document.getElementById('autocomplete'),
-      {
-          fields: ["formatted_address", "geometry", "name"],
-          componentRestrictions: {'country': ['MX']}
-      });
+    document.getElementById('autocomplete'),
+    {
+      fields: ["formatted_address", "geometry", "name"],
+      componentRestrictions: { 'country': ['MX'] }
+    });
   autocomplete.addListener('place_changed', onPlaceChanged);
 }
 //Funcion para la seleccion de alguna dirección
-function onPlaceChanged(){
+function onPlaceChanged() {
   var place = autocomplete.getPlace();
-  if (!place.geometry){
-      //Usuario no seleccionó opción, resetear
-      alert("Favor de seleccionar una opción");
-  }else{
-      //Ubicar pin con la dirección indicada
-      obtenerCoordenadas();
+  if (!place.geometry) {
+    //Usuario no seleccionó opción, resetear
+    alert("Favor de seleccionar una opción");
+  } else {
+    //Ubicar pin con la dirección indicada
+    obtenerCoordenadas();
   }
 }
 
 //Funcion para inicializar mapa
 function initMap() {
-map = new google.maps.Map(document.getElementById("mapi"), {
-  center: { lat: 23.305, lng: -102.206},
-  zoom: 5,
-  zoomControl: false,
-  streetViewControl: false,
-  fullscreenControl: false,
-  mapTypeControl: false
-});
-//Marcador rojo que indica dirección
-marcador = new google.maps.Marker({
-  map: map,
-  draggable: true,
-});
+  map = new google.maps.Map(document.getElementById("mapi"), {
+    center: { lat: 23.305, lng: -102.206 },
+    zoom: 5,
+    zoomControl: false,
+    streetViewControl: false,
+    fullscreenControl: false,
+    mapTypeControl: false
+  });
+  //Marcador rojo que indica dirección
+  marcador = new google.maps.Marker({
+    map: map,
+    draggable: true,
+  });
 }
 //Mandas a llamar las funciones para que trabajen los mapas
 function inicializar() {
@@ -50,73 +50,73 @@ function inicializar() {
   initAutocomplete();
 }
 //Hay que hacer que la dirección pueda ser resuelta por la API con los espacios
-function direction(){
+function direction() {
   address = (document.getElementById('autocomplete').value).replace(/ /g, "%20");
 }
 //Obtener coordenadas cuando se escribe una dirección
-function obtenerCoordenadas(){
-          direction();
-          let url = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address + '&key=AIzaSyCrPZOMvbdb6qzeZE_FFjWtrcUuF7c49CA';
-          var xhr = new XMLHttpRequest();
-          xhr.onreadystatechange = function() {
-              if (xhr.readyState === 4){
-                  response = JSON.parse(xhr.responseText);
-                  ubicarMarcador(response.results[0].geometry.location.lat,response.results[0].geometry.location.lng);
-                  descomponerDireccion(response.results[0].address_components);
-              }
-          }
-          xhr.open('GET', url);
-          xhr.send();
+function obtenerCoordenadas() {
+  direction();
+  let url = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address + '&key=AIzaSyCrPZOMvbdb6qzeZE_FFjWtrcUuF7c49CA';
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      response = JSON.parse(xhr.responseText);
+      ubicarMarcador(response.results[0].geometry.location.lat, response.results[0].geometry.location.lng);
+      descomponerDireccion(response.results[0].address_components);
+    }
+  }
+  xhr.open('GET', url);
+  xhr.send();
 }
 // Código para cambiar la ubicación del marker
-function ubicarMarcador(mylat,mylng){
-myLatLng = new google.maps.LatLng(mylat,mylng);
-mapOptions = {
-zoom: 17,
-center: myLatLng,
-zoomControl: false,
-streetViewControl: false,
-fullscreenControl: false,
-mapTypeControl: false
-}
-map = new google.maps.Map(document.getElementById("mapi"), mapOptions);
+function ubicarMarcador(mylat, mylng) {
+  myLatLng = new google.maps.LatLng(mylat, mylng);
+  mapOptions = {
+    zoom: 17,
+    center: myLatLng,
+    zoomControl: false,
+    streetViewControl: false,
+    fullscreenControl: false,
+    mapTypeControl: false
+  }
+  map = new google.maps.Map(document.getElementById("mapi"), mapOptions);
 
-marker = new google.maps.Marker({
-  draggable: true,
-  position: myLatLng,
-});
-marker.setMap(map);
-marker.addListener('dragend', function () {
-obtenerDireccion(marker.getPosition().lat(),marker.getPosition().lng());
-});
+  marker = new google.maps.Marker({
+    draggable: true,
+    position: myLatLng,
+  });
+  marker.setMap(map);
+  marker.addListener('dragend', function () {
+    obtenerDireccion(marker.getPosition().lat(), marker.getPosition().lng());
+  });
 }
 
 //Código de funcion para obtener ubicación por botón
-function miUbicacion(){
-function localizacion(posicion){
-  lat = posicion.coords.latitude;
-  lng = posicion.coords.longitude;
-  ubicarMarcador(lat,lng);
-  obtenerDireccion(lat,lng);
-}
-function errorDeUbicacion(){
-  alert("Error al obtener tu ubicación")
-}
-navigator.geolocation.getCurrentPosition(localizacion,errorDeUbicacion);
+function miUbicacion() {
+  function localizacion(posicion) {
+    lat = posicion.coords.latitude;
+    lng = posicion.coords.longitude;
+    ubicarMarcador(lat, lng);
+    obtenerDireccion(lat, lng);
+  }
+  function errorDeUbicacion() {
+    alert("Error al obtener tu ubicación")
+  }
+  navigator.geolocation.getCurrentPosition(localizacion, errorDeUbicacion);
 }
 // Apartir de coordenadas separadas obtener la dirección
-function obtenerDireccion(lati,longi){
-let url = 'https://maps.googleapis.com/maps/api/geocode/json?latlng=' + lati + ',' + longi + '&key=AIzaSyCrPZOMvbdb6qzeZE_FFjWtrcUuF7c49CA';
-var xhr = new XMLHttpRequest();
-xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4){
-        response = JSON.parse(xhr.responseText);
-        document.getElementById('autocomplete').value = response.results[0].formatted_address;
-        //descomponerDireccion(response.results[0].address_components);
+function obtenerDireccion(lati, longi) {
+  let url = 'https://maps.googleapis.com/maps/api/geocode/json?latlng=' + lati + ',' + longi + '&key=AIzaSyCrPZOMvbdb6qzeZE_FFjWtrcUuF7c49CA';
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      response = JSON.parse(xhr.responseText);
+      document.getElementById('autocomplete').value = response.results[0].formatted_address;
+      //descomponerDireccion(response.results[0].address_components);
     }
-}
-xhr.open('GET', url);
-xhr.send();
+  }
+  xhr.open('GET', url);
+  xhr.send();
 }
 /*
 function descomponerDireccion(array){
@@ -152,10 +152,10 @@ for (let i = 0; i < array.length; i++) {
 }*/
 
 ///////////////////////
-function cargarHeadFoot(){
+function cargarHeadFoot() {
 
-  menu.innerHTML =     
-  `<nav class="navbar navbar-expand-lg navbar-light bg-dark mt-1">
+  menu.innerHTML =
+    `<nav class="navbar navbar-expand-lg navbar-light bg-dark mt-1">
   <div class="container-fluid justify-content-between ps-0">
   <div id="background-logo" class="ms-3"> 
   <img src="assets/img/logo-completo.png" alt="logo" id="logo-completo">
@@ -211,8 +211,8 @@ function cargarHeadFoot(){
 
 
 
-piepagina.innerHTML =       
-`<div class="d-flex  justify-content-between">
+  piepagina.innerHTML =
+    `<div class="d-flex  justify-content-between">
   <div class="col-md-4 d-flex">
     <p class="text-rocket  ps-0 pe-1 fw-bolder letras-estilo22">© 2022 <br>Equipo Rocket</p>
   </div>
@@ -239,11 +239,11 @@ piepagina.innerHTML =
 
 // Al recargar la página, la pantalla regresa a su posición original. 
 if (history.scrollRestoration) {
-history.scrollRestoration = 'manual';
+  history.scrollRestoration = 'manual';
 } else {
-window.onbeforeunload = function () {
+  window.onbeforeunload = function () {
     window.scrollTo(0, 0);
-}
+  }
 }
 
 /*
@@ -254,31 +254,32 @@ const $contenidoDelCarrito = document.querySelector('.contenidoDelCarrito');
 
 
 //esta funcion se carga cuando se inicia la pagina y agrega los objetos al carrito
-function cargarCarrito(){
-  
+function cargarCarrito() {
+
   const carritoDeComprasFila = document.createElement("div");
 
   let carrito = sessionStorage.getItem("carrito");
 
-   carritoDeComprasFila.innerHTML = carrito;
-  $contenidoDelCarrito.appendChild(carritoDeComprasFila); 
-  
+  carritoDeComprasFila.innerHTML = carrito;
+  $contenidoDelCarrito.appendChild(carritoDeComprasFila);
+
   const botonesBorrar = $contenidoDelCarrito.querySelectorAll('.buttonDelete');
   botonesBorrar.forEach(quitarElemento => {
-          quitarElemento.addEventListener('click', removerObjeto);    
-      });
+    quitarElemento.addEventListener('click', removerObjeto);
+  });
 
-  const contador = $contenidoDelCarrito.querySelectorAll('.shoppingCartItemQuantity');    
+  const contador = $contenidoDelCarrito.querySelectorAll('.shoppingCartItemQuantity');
   contador.forEach(cambiar => {
-      cambiar.addEventListener('change', cambiarContador) 
+    cambiar.addEventListener('change', cambiarContador)
   })
 
-  actualizarTotal();   
+  actualizarTotal();
 }
 
 
+var control = 0; 
 //esta funcion actualiza el precio total del carrito
-function actualizarTotal(){
+function actualizarTotal(numero) {
   let total = 0;
   const carritoTotal = document.querySelector('.carrito-total');
   console.log(carritoTotal);
@@ -286,39 +287,76 @@ function actualizarTotal(){
   console.log("objetos del carrito", carritoComprasObjetos);
 
   carritoComprasObjetos.forEach(carritoObjeto => {
-      const elementosCarritoPrecio = carritoObjeto.querySelector('.shoppingCartItemPrice')
-      const precioObjeto = Number(elementosCarritoPrecio.textContent.replace('$', '',).replace(',' , ''));
-      
-      const numeroObjetos = carritoObjeto.querySelector('.shoppingCartItemQuantity');
-      
+    const elementosCarritoPrecio = carritoObjeto.querySelector('.shoppingCartItemPrice')
+    const precioObjeto = Number(elementosCarritoPrecio.textContent.replace('$', '',).replace(',', ''));
 
-      const valor = Number(numeroObjetos.value);
-      
-      total = total +  precioObjeto * valor;
-      
+    const numeroObjetos = carritoObjeto.querySelector('.shoppingCartItemQuantity');
+
+
+    const valor = Number(numeroObjetos.value);
+
+    total = total + precioObjeto * valor;
 
   });
+  const $superBoton = document.querySelector('.superBoton');
+  
+  const espacioBoton = document.createElement("div");
+  let superBotonComprar = `<button class="btn btn-success  comprarButton fw-bolder" type="button" data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop" onclick="comprarBotonClick()">Comprar</button>`
+      espacioBoton.innerHTML = superBotonComprar
+     
+  if (carritoComprasObjetos.length != 0 && control == 0) {
+     control++
+    $superBoton.appendChild(espacioBoton)
+  }else if(carritoComprasObjetos.length == 0 && control > 0){
+    $superBoton.innerHTML = '';
+    control = 0;
+  }
+
+  const elementosTitulo = $contenidoDelCarrito.getElementsByClassName('shoppingCartItemTitle')
+  
+
+  console.log('aqui snake ', elementosTitulo);
+
+ 
+
+
+
+
   carritoTotal.innerHTML = `${total.toFixed(2)}$`
 }
 
 //esta funcion remueve elementos del carrito
-function removerObjeto(event){
+function removerObjeto(event) {
   const clickBoton = event.target;
   clickBoton.closest('.carritoObjeto').remove();
+  control++
   actualizarTotal()
 }
 
 //esta funcion cambia el valor del contador
-function cambiarContador(event){
+function cambiarContador(event) {
   const imput = event.target;
-  
-  if (imput.value <= 0 ){
-      imput.value = 1;
+
+  if (imput.value <= 0) {
+    imput.value = 1;
   }
+  actualizarTotal($divsCarrito == 0);
+}
+
+
+
+function comprarBotonClick() {
+  $contenidoDelCarrito.innerHTML = '';
   actualizarTotal();
 }
 
-function comprarBotonClick(){
-  $contenidoDelCarrito.innerHTML = '';
-  actualizarTotal();
-}  
+
+
+
+
+
+
+
+
+

@@ -27,31 +27,31 @@
 
 
   <!-- Seccion del carrito -->
- <h1 class="titulo letras-estilo3 fw-bolder text-center">Mi carrito</h1>
+ <h1 class="titulo letras-estilo3 fw-bolder text-center mb-5">Mi carrito</h1>
 
- <section class="shopping-cart text-light">
+ <section class="shopping-cart text-light fw-bolder">
    <div class="container">
 
 
      <div class="row">
        <div class="col-6">
          <div class="shopping-cart-header">
-           <h6>Producto</h6>
+           <h6 class="fw-bolder">Producto</h6>
          </div>
        </div>
        <div class="col-2">
          <div class="shopping-cart-header">
-           <h6 class="text-truncate">Precio</h6>
+           <h6 class="text-truncate fw-bolder">Precio</h6>
          </div>
        </div>
        <div class="col-4">
-         <div class="shopping-cart-header">
-           <h6>Cantidad</h6>
+         <div class="shopping-cart-header ">
+           <h6 class="fw-bolder">Cantidad</h6>
          </div>
        </div>
      </div>
      <!-- Carrito de compras pc  -->
-     <div class="contenidoDelCarrito">
+     <div class="contenidoDelCarrito fw-bolder">
 
      </div>
      <!-- Final de carrito de compras pc -->
@@ -64,8 +64,9 @@
            <p class=" mb-0  baro carrito-total ">0$</p>
 
            <!-- Buton que llama al madal -->
-           <button class="btn btn-success comprar comprarButton " type="button" data-bs-toggle="modal"
-             data-bs-target="#staticBackdrop" onclick="comprarBotonClick()">Comprar</button>
+           <div class="superBoton comprar">
+            
+            </div>
 
 
 
@@ -146,7 +147,7 @@
           <script src="./assets/js/headfoot.js"></script>
           <script src="https://kit.fontawesome.com/9392ec639d.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-          <script src="assets/js/equipos-carrioto.js"></script>
+          
           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrPZOMvbdb6qzeZE_FFjWtrcUuF7c49CA&libraries=places&callback=inicializar&language=es&region=MX" async defer></script>
 </body>
 </html>
