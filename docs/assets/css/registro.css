@@ -61,9 +61,9 @@ color: white;
 
 }
 
-
-
-
+#nombre, #correo, #password, #password2, #telefono{
+  font-weight: 600;
+}
 
 .formulario__validacion-estado{
   position: absolute;
