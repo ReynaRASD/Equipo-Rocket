@@ -79,6 +79,8 @@ main .carrito{
   text-transform: uppercase;
   text-align: center;
   font-weight: 600;
+  font-weight: bolder;
+
 }
 
 .item-image {
@@ -100,6 +102,8 @@ main .carrito{
 /* ? SHOPPING CART */
 .shopping-cart-items {
   padding: 20px 0px;
+  font-weight: bolder;
+
 }
 
 .shopping-cart-header {
@@ -117,6 +121,8 @@ main .carrito{
   border-radius: 5px;
   background: #eee;
   padding: 5px;
+  font-weight: bolder;
+
 }
 
 .shopping-cart-total {

@@ -1,6 +1,6 @@
 const $agregarTienda = document.querySelectorAll('.addToCart');
 console.log('arreglo de botonoes ' + $agregarTienda);
-let arrayCarrito = [];
+
 
 $agregarTienda.forEach(agregarTienda => {
     agregarTienda.addEventListener('click', agregarAlClickear);
@@ -30,37 +30,31 @@ function aniadirAlCarrito(titulo, varo, imagen){
     
     console.log(titulo, varo, imagen)
 
-    var title = titulo;
-    
-    sessionStorage.setItem("title", title);
-   
-    
-    
     const carritoPCS = `
-    <div class="row carritoObjeto">
+    <div class="row carritoObjeto  ">
     <div class="col-6">
 
         <div class=" d-flex align-items-center h-100 border-bottom pb-2 pt-3">
             <img src=${imagen} class="shopping-cart-image">
-            <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">${titulo}</h6>
+            <h6 class="shopping-cart-item-title shoppingCartItemTitle ml-3 mb-0 fw-bolder">${titulo}</h6>
         </div>
     </div>
     <div class="col-2">
         <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3">
-            <p class="item-price mb-0 shoppingCartItemPrice">${varo}</p>
+            <p class="item-price mb-0 shoppingCartItemPrice fw-bolder">${varo}</p>
         </div>
     </div>
     <div class="col-4">
         <div
             class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
-            <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number"
+            <input class="shopping-cart-quantity-input shoppingCartItemQuantity " type="number"
                 value="1">
             <button class="btn btn-danger buttonDelete" type="button">X</button>
         </div>
     </div>
 </div>`;
 
-arrayCarrito=[...arrayCarrito,carritoPCS];
+
 
  var aus = sessionStorage.getItem("carrito"); 
 console.log("El valor de AUS" + aus);
