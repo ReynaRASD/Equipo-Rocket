@@ -5,8 +5,10 @@ import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.bt.demo.model.ComprasModel;
 import com.bt.demo.model.ProductosModel;
 import com.bt.demo.model.UsuariosModel;
+import com.bt.demo.repositories.ComprasRepository;
 import com.bt.demo.repositories.ProductosRepository;
 import com.bt.demo.repositories.UsuariosRepository;
 
@@ -16,10 +18,12 @@ public class BtService {
 
 	private final UsuariosRepository usuariosRepository;
 	private final ProductosRepository productosRepository;
+	private final ComprasRepository comprasRepository;
 	
-	public BtService (@Autowired UsuariosRepository usuariosRepository, @Autowired ProductosRepository productosRepository) {
+	public BtService (@Autowired UsuariosRepository usuariosRepository, @Autowired ProductosRepository productosRepository, @Autowired ComprasRepository comprasRepository) {
 	this.usuariosRepository = usuariosRepository;
 	this.productosRepository = productosRepository;
+	this.comprasRepository = comprasRepository;
 	}
 	
 	
@@ -69,4 +73,30 @@ public class BtService {
  		}
       }
 	
+    // Métodos compras
+    // Obtener y mostrar compras
+      
+    //obtener y mostrar elementos:
+   	public ArrayList<ComprasModel> obtenerDatosCompras(){
+   		return (ArrayList<ComprasModel>) comprasRepository.findAll();
+   	}
+
+       //guarda datos en sql
+   	public ComprasModel guardarDatosCompras(ComprasModel comprasModel) {
+   		
+   	return comprasRepository.save(comprasModel);
+   	}
+   	
+   	//borra
+        public boolean eliminarDatoCompras(Integer id) {
+   		
+   		try {
+   			comprasRepository.deleteById(id);
+   			return true;
+   		}catch (Exception error) {
+   			return false;
+   		}
+        }
+
+      
 }
