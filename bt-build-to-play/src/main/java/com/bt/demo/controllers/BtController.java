@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.bt.demo.model.ComprasModel;
 import com.bt.demo.model.ProductosModel;
 import com.bt.demo.model.UsuariosModel;
 import com.bt.demo.services.BtService;
@@ -57,6 +58,21 @@ public class BtController {
 		return btService.eliminarDatoProductos(id);
 	} 
 	
+	// Compras
 	
+	@GetMapping("/compras")
+	public ArrayList<ComprasModel> obtenerDatosCompras(){
+		return btService.obtenerDatosCompras();
+	}
+	
+	@PostMapping("/compras")
+	public ComprasModel guardarDatosCompras(@RequestBody ComprasModel comprasModel) {
+		return btService.guardarDatosCompras(comprasModel);
+	}
+	
+	@DeleteMapping(path = "compras/{id}")                      
+	public boolean eliminarDatoCompras(@PathVariable("id")Integer id) {
+		return btService.eliminarDatoCompras(id);
+	}
 	
 }
