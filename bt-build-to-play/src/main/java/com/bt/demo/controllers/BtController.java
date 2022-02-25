@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.bt.demo.model.ProductosModel;
 import com.bt.demo.model.UsuariosModel;
 import com.bt.demo.services.BtService;
 
@@ -22,6 +23,7 @@ public class BtController {
 		this.btService = btService;
 	}
 	
+	//Usuarios 
 	
 	@GetMapping("/usuario")
 	public ArrayList<UsuariosModel> obtenerDatos(){
@@ -36,7 +38,24 @@ public class BtController {
 	@DeleteMapping(path = "usuarios/{id}")                      
 	public boolean eliminarDato(@PathVariable("id")Integer id) {
 		return btService.eliminarDato(id);
+	} 
+	
+	//Productos  
+	
+	@GetMapping("/productos")
+	public ArrayList<ProductosModel> obtenerDatosProductos(){
+		return btService.obtenerDatosProductos();
 	}
+	
+	@PostMapping("/productos")
+	public ProductosModel guardarDatosProductos(@RequestBody ProductosModel productosModel) {
+		return btService.guardarDatosProductos(productosModel);
+	}
+	
+	@DeleteMapping(path = "productos/{id}")                      
+	public boolean eliminarDatoProductos(@PathVariable("id")Integer id) {
+		return btService.eliminarDatoProductos(id);
+	} 
 	
 	
 	
