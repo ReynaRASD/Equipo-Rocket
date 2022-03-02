@@ -4,7 +4,7 @@ const $correo = document.querySelector('#correo');
 const $nombre = document.querySelector('#nombre');
 const $telefono = document.querySelector('#telefono');
 
-$formLogin.addEventListener('submit', (e) => {
+$formulario.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const password = $password.value;
@@ -12,9 +12,11 @@ $formLogin.addEventListener('submit', (e) => {
     const nombre = $nombre.value;
     const telefono = $telefono.value;
 
-    if(password != '' && correo != '' && nombre != '' && telefono != '') {
-        fetch('http://localhost:8080/registrar', {
+    
+        fetch("http://localhost:8080/usuario/registrar",{
             method: 'POST',
+            mode: 'no-cors',
+            cache: 'no-cache',
             body: JSON.stringify( {
                 password,
                 correo,
@@ -22,11 +24,18 @@ $formLogin.addEventListener('submit', (e) => {
                 telefono
             }),
             headers: {
-                'Content-type': 'application/json'
+                'Content-Type': 'application/json; charset=utf8',
+                'Access-Control-Allow-Origin': '*'
+
+
             }
         })
-        .then((response) => response.json())
-        .then((json) => console.log (json));
-    }
+
+        
+        .then(resp => resp.text()).then(console.log)
+
+        
+    
+    
 
 })
