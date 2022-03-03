@@ -14,7 +14,7 @@ $formulario.addEventListener('submit', (e) => {
     
 
     if(password !='' && nombre !='' && telefono !='' && username !=''){
-        fetch("http://localhost:8080/api/user",{
+        fetch("http://localhost:8080/api/local",{
             method: 'POST',
             body: JSON.stringify( {
                 password,
