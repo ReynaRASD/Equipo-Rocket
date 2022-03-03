@@ -8,25 +8,25 @@ $formulario.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const password = $password.value;
-    const correo = $correo.value;
+    const username = $correo.value;
+    const correo =  $correo.value;
     const nombre = $nombre.value;
     const telefono = $telefono.value;
 
     
-        fetch("http://localhost:8080/usuario/registrar",{
+        fetch("http://localhost:8080/api/user",{
             method: 'POST',
-            mode: 'no-cors',
-            cache: 'no-cache',
             body: JSON.stringify( {
                 password,
                 correo,
+                username,
                 nombre,
                 telefono
             }),
             headers: {
                 'Content-Type': 'application/json; charset=utf8',
-                'Access-Control-Allow-Origin': '*'
-
+                'Access-Control-Allow-Origin': '*',
+                'Accept': 'application/json'
 
             }
         })
