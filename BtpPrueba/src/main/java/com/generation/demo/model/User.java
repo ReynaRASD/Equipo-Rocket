@@ -13,8 +13,8 @@ import javax.persistence.Table;
 
 
 @Entity  
-@Table(name = "usuarios")
-public class UsuarioModel{
+@Table(name = "user")
+public class User{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(unique = true, nullable = false )
@@ -24,21 +24,46 @@ public class UsuarioModel{
     private String nombre;
 	
 	@Column(nullable = false, length = 100, unique = true)
-	private String correo;
+	private String Username; //correo
 	
 	@Column(nullable = false, length = 100)
-	private String contrasenia;
+	private String Password;
 	
 	@Column(nullable = false, length = 45)
 	private String telefono;
-	
 	
 	@OneToMany(mappedBy = "usuario")
     private List<CompraModel> comprasModel;
 	
 	
+	public String getUsername() {
+		return Username;
+	}
 
-	public UsuarioModel() {
+
+
+	public void setUsername(String username) {
+		Username = username;
+	}
+
+
+
+	public String getPassword() {
+		return Password;
+	}
+
+
+
+	public void setPassword(String password) {
+		Password = password;
+	}
+
+
+
+	
+	
+
+	public User() {
 	}
 
 
@@ -67,28 +92,11 @@ public class UsuarioModel{
 
 
 
-	public String getCorreo() {
-		return correo;
-	}
+	
 
 
 
-	public void setCorreo(String correo) {
-		this.correo = correo;
-	}
-
-
-
-	public String getContrasenia() {
-		return contrasenia;
-	}
-
-
-
-	public void setContrasenia(String contrasenia) {
-		this.contrasenia = contrasenia;
-	}
-
+	
 
 
 	public String getTelefono() {
@@ -117,9 +125,13 @@ public class UsuarioModel{
 
 	@Override
 	public String toString() {
-		return "UsuarioModel [id=" + id + ", nombre=" + nombre + ", correo=" + correo + ", contrasenia=" + contrasenia
+		return "UsuarioModel [id=" + id + ", nombre=" + nombre + ", Username=" + Username + ", Password=" + Password
 				+ ", telefono=" + telefono + ", comprasModel=" + comprasModel + "]";
 	}
+
+
+
+	
 
 
 }

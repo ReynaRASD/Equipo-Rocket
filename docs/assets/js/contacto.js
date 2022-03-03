@@ -2,27 +2,27 @@ const $contacto = document.getElementById("contacto");
 const inputs = document.querySelectorAll("#contacto");
 
 const expresiones = {
-	nombre: /^[a-zA-ZÀ-ÿ\s]{4,25}$/,
+	name: /^[a-zA-ZÀ-ÿ\s]{4,25}$/,
     email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-    mensaje: /^[a-zA-ZÀ-ÿ\s\_\-]{5,150}$/ // Letras, numeros, guion y guion_bajo
+    message: /^[a-zA-ZÀ-ÿ\s\_\-]{5,150}$/ // Letras, numeros, guion y guion_bajo
 }
 
 const campos = {
-    nombre: false,
+    name: false,
     email: false,
-    mensaje: false
+    message: false
 }
 
 const validarFormulario = (e) => {
     switch (e.target.name) {
-        case "nombre":
-			validarCampo(expresiones.nombre, e.target, "nombre");
+        case "name":
+			validarCampo(expresiones.name, e.target, "name");
         break;
         case "email":
             validarCampo(expresiones.email, e.target, 'email');
         break;
-        case "mensaje":
-            validarCampo(expresiones.mensaje, e.target, 'mensaje');
+        case "message":
+            validarCampo(expresiones.message, e.target, 'message');
         break;
     }
 }
@@ -54,13 +54,11 @@ inputs.forEach((input) => {
 
 
 $contacto.addEventListener('submit', (e)=>{
-	e.preventDefault();
-    if (campos.nombre && campos.email && campos.mensaje) {
-        $contacto.reset();
-
+    if (campos.name && campos.email && campos.message) {
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
 		setTimeout(() => {
 			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
+			$contacto.reset();
 		}, 4000);
 
 		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
