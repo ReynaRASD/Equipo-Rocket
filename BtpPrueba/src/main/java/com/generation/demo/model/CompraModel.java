@@ -38,7 +38,7 @@ public class CompraModel {
 	@ManyToOne
 	@JsonProperty(access = Access.WRITE_ONLY) 
 	
-	private UsuarioModel usuario;
+	private User usuario;
 	
 	/*** RELACION MUCHOS A MUCHOS **/
 	
@@ -103,12 +103,12 @@ public class CompraModel {
 	}
 
 
-	public UsuarioModel getUsuario() {
+	public User getUsuario() {
 		return usuario;
 	}
 
 
-	public void setUsuario(UsuarioModel usuario) {
+	public void setUsuario(User usuario) {
 		this.usuario = usuario;
 	}
 
@@ -128,7 +128,8 @@ public class CompraModel {
 				+ ", total_productos=" + total_productos + ", fecha=" + fecha + ", usuario=" + usuario + ", productos="
 				+ productos + "]";
 	}
-		
+
+	
 
 	
 }
