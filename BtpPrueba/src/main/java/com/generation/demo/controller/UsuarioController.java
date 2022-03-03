@@ -28,8 +28,8 @@ public class UsuarioController {
 	}
 	
 	@PostMapping("/api/user")
-	public User guardarDatos(@RequestBody User usuarioModel) {
-		return usuarioService.guardarDatos(usuarioModel);
+	public User guardarDatos(@RequestBody User user) {
+		return usuarioService.guardarDatos(user);
 	}
 	
 	@DeleteMapping(path = "usuario/{id}")                      

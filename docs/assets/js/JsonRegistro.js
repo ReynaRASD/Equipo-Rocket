@@ -12,7 +12,12 @@ $formulario.addEventListener('submit', (e) => {
     const nombre = $nombre.value;
     const telefono = $telefono.value;
 
-    
+    console.log(JSON.stringify( {
+        password,
+        correo,
+        nombre,
+        telefono
+    }));
         fetch("http://localhost:8080/usuario/registrar",{
             method: 'POST',
             mode: 'no-cors',
