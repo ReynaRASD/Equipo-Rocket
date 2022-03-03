@@ -2,15 +2,15 @@ package com.generation.demo.service;
 
 import java.util.ArrayList;
 
-import com.generation.demo.model.UsuarioModel;
+import com.generation.demo.model.User;
 
 public interface UsuarioService {
 	
-	UsuarioModel obtenerUsuario(Integer id);
+	User obtenerUsuario(Integer id);
 	
-	ArrayList<UsuarioModel> obtenerDatos();
+	ArrayList<User> obtenerDatos();
 	
-	UsuarioModel guardarDatos(UsuarioModel usuarioModel);
+	User guardarDatos(User user);
 	
 	boolean eliminarDato(Integer id);
 	

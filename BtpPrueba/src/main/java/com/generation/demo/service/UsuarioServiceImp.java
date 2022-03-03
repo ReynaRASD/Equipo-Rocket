@@ -5,7 +5,8 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.generation.demo.model.UsuarioModel;
+
+import com.generation.demo.model.User;
 import com.generation.demo.repository.UsuarioRepository;
 
 @Service
@@ -18,19 +19,19 @@ public class UsuarioServiceImp implements UsuarioService {
     }
 
 	@Override
-	public UsuarioModel obtenerUsuario(Integer id) {
-		Optional<UsuarioModel> user = usuarioRepository.findById(id);
+	public User obtenerUsuario(Integer id) {
+		Optional<User> user = usuarioRepository.findById(id);
         return user.orElse(null);
 	}
 
 	@Override
-	public ArrayList<UsuarioModel> obtenerDatos() {
-		return (ArrayList<UsuarioModel>) usuarioRepository.findAll();
+	public ArrayList<User> obtenerDatos() {
+		return (ArrayList<User>) usuarioRepository.findAll();
 	}
 
 	@Override
-	public UsuarioModel guardarDatos(UsuarioModel usuarioModel) {
-		return usuarioRepository.save(usuarioModel);
+	public User guardarDatos(User user) {
+		return usuarioRepository.save(user);
 	}
 
 	@Override

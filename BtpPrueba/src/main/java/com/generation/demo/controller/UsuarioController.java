@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.generation.demo.model.UsuarioModel;
+import com.generation.demo.model.User;
 import com.generation.demo.service.UsuarioService;
 
 @RestController
@@ -23,12 +23,12 @@ public class UsuarioController {
 	}
 	
 	@GetMapping("/usuario")
-	public ArrayList<UsuarioModel> obtenerDatos(){
+	public ArrayList<User> obtenerDatos(){
 		return usuarioService.obtenerDatos();
 	}
 	
-	@PostMapping("/registrar")
-	public UsuarioModel guardarDatos(@RequestBody UsuarioModel usuarioModel) {
+	@PostMapping("/api/user")
+	public User guardarDatos(@RequestBody User usuarioModel) {
 		return usuarioService.guardarDatos(usuarioModel);
 	}
 	
