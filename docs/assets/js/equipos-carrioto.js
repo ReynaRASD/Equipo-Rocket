@@ -1,5 +1,5 @@
 const $agregarTienda = document.querySelectorAll('.addToCart');
-console.log('arreglo de botonoes ' + $agregarTienda);
+//console.log('arreglo de botonoes ' + $agregarTienda);
 
 
 $agregarTienda.forEach(agregarTienda => {
@@ -28,7 +28,7 @@ function cambiarClase(){
 function aniadirAlCarrito(titulo, varo, imagen){
     
     
-    console.log(titulo, varo, imagen)
+    //console.log(titulo, varo, imagen);
 
     const carritoPCS = `
     <div class="row carritoObjeto  ">
@@ -57,15 +57,27 @@ function aniadirAlCarrito(titulo, varo, imagen){
 
 
  var aus = sessionStorage.getItem("carrito"); 
-console.log("El valor de AUS" + aus);
+//console.log("El valor de AUS" + aus);
  if (aus == null){
     sessionStorage.setItem("carrito", carritoPCS);
-    console.log("No se que hago parte 1" + sessionStorage.setItem("carrito", carritoPCS));
+    //console.log("No se que hago parte 1" + sessionStorage.setItem("carrito", carritoPCS));
 }else{
     sessionStorage.setItem("carrito", aus + carritoPCS);
-    console.log("No se que hago parte 2" + sessionStorage.setItem("carrito", aus + carritoPCS ));
+    //console.log("No se que hago parte 2" + sessionStorage.setItem("carrito", aus + carritoPCS ));
 } 
 
 //sessionStorage.setItem("carrito", JSON.stringify(arrayCarrito));
+
+////////////////////////////////////////////////////////////////////////////////// jason
+// de aqui sacamos el titulo y el precio por equipo :v 
+// pero debe ser en un ciclo de dos valores y con contador
+
+console.log(titulo, varo);
+
+
+
+
+
 }
+
 

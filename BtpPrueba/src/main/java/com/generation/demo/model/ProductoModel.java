@@ -26,13 +26,7 @@ public class ProductoModel {
 	private String nombre;
 
 	@Column(nullable = false)
-	private String descripcion;
-
-	@Column(nullable = false)
 	private Float precio;
-
-	@Column(nullable = false, length = 45)
-	private String categoria;
 
 	/*** RELACION MUCHOS A MUCHOS **/
 	@JoinTable(

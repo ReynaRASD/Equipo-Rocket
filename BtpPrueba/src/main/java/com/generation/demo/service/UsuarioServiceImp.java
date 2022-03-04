@@ -1,7 +1,4 @@
 package com.generation.demo.service;
-
-
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,21 +19,20 @@ public class UsuarioServiceImp implements UsuarioService, UserDetailsService{
 	
 	private final UsuarioRepository usuarioRepository;
     
-    public UsuarioServiceImp (@Autowired UsuarioRepository usuarioRepository) {
+    public UsuarioServiceImp (UsuarioRepository usuarioRepository) {
     	this.usuarioRepository = usuarioRepository;
     }
 	
 	
-	@Override
-	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		User user = usuarioRepository.findByUsername(username);
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        User user = usuarioRepository.findByUsername(username);
 
         if(user == null) {
             throw new UsernameNotFoundException(username);
         }
         return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(), emptyList());
-    
-	}
+    }
 	
 
 

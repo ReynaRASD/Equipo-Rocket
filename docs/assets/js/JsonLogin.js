@@ -1,5 +1,6 @@
 
 const $formulario = document.querySelector('#formulario');
+localStorage.setItem('id',"0");
 const $password = document.querySelector('#exampleInputPassword1');
 const $correo = document.querySelector('#exampleInputEmail1');
 
@@ -31,10 +32,10 @@ $formulario.addEventListener('submit', (e) => {
                 console.log(token);
                 url = window.location;
                 const path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1)
-                location.href = path +  '../../equipos.html';
+                location.href = path +  'carrito.html';
             } else {
                 localStorage.removeItem('token');
-                alert("No we.");
+                alert("Datos incorrectos.");
                 //emailError.textContent = 'Usuario o contraseña incorrecta';
             }
         })

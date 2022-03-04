@@ -13,7 +13,7 @@ import javax.persistence.Table;
 
 
 @Entity  
-@Table(name = "user")
+@Table(name = "users")
 public class User{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,7 +23,7 @@ public class User{
 	@Column(nullable = false, length = 100)
     private String nombre;
 	
-	@Column(nullable = false, length = 100, unique = true)
+	@Column(nullable = false, length = 100)
 	private String username; //correo
 	
 	@Column(nullable = false, length = 100)
