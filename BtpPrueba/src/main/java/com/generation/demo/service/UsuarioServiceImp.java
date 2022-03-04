@@ -1,32 +1,58 @@
 package com.generation.demo.service;
 
-import java.util.ArrayList;
-import java.util.Optional;
+
+
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
+import static java.util.Collections.emptyList;
 import com.generation.demo.model.User;
 import com.generation.demo.repository.UsuarioRepository;
 
+import java.util.Optional;
+
+
 @Service
-public class UsuarioServiceImp implements UsuarioService {
+public class UsuarioServiceImp implements UsuarioService, UserDetailsService{
 	
 	private final UsuarioRepository usuarioRepository;
     
     public UsuarioServiceImp (@Autowired UsuarioRepository usuarioRepository) {
     	this.usuarioRepository = usuarioRepository;
     }
+	
+	
+	@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		User user = usuarioRepository.findByUsername(username);
+
+        if(user == null) {
+            throw new UsernameNotFoundException(username);
+        }
+        return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(), emptyList());
+    
+	}
+	
+
+
+
+
+
 
 	@Override
-	public User obtenerUsuario(Integer id) {
+	public User obtenerUsuario(Long id) {
 		Optional<User> user = usuarioRepository.findById(id);
         return user.orElse(null);
 	}
 
 	@Override
-	public ArrayList<User> obtenerDatos() {
-		return (ArrayList<User>) usuarioRepository.findAll();
+	public List<User> obtenerDatos() {
+		return (List<User>) usuarioRepository.findAll();
 	}
 
 	@Override
@@ -35,15 +61,8 @@ public class UsuarioServiceImp implements UsuarioService {
 	}
 
 	@Override
-	public boolean eliminarDato(Integer id) {
-		try {
-			usuarioRepository.deleteById(id);
-			return true;
-		}catch (Exception error) {
-			return false;
-		}
+	public void eliminarDato(Long id) {
+		usuarioRepository.deleteById(id);
 	}
-    
-    
 
 }

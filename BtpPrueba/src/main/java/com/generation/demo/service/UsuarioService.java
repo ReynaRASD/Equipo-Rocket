@@ -1,17 +1,21 @@
 package com.generation.demo.service;
+import static java.util.Collections.emptyList;
 
-import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
 
 import com.generation.demo.model.User;
 
+
 public interface UsuarioService {
 	
-	User obtenerUsuario(Integer id);
+	User obtenerUsuario(Long id);
 	
-	ArrayList<User> obtenerDatos();
+	List<User>obtenerDatos();
 	
 	User guardarDatos(User user);
 	
-	boolean eliminarDato(Integer id);
+	void eliminarDato(Long id);
 	
 }

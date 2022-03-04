@@ -22,7 +22,7 @@ import java.util.Date;
 import static com.generation.demo.security.Constants.*;
 
 public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilter {        
-    private static final String ISSUER_INFO = null;
+    
 	private AuthenticationManager authenticationManager;
 
     public JWTAuthenticationFilter(AuthenticationManager authenticationManager) {
