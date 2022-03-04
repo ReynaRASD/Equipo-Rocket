@@ -2,8 +2,11 @@ package com.generation.demo.controller;
 
 
 
-import org.springframework.beans.factory.annotation.Autowired;
+import java.util.ArrayList;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,18 +27,23 @@ public class UsuarioController {
 		this.usuarioService = usuarioService;
 		this.bCryptPasswordEncoder = bCryptPasswordEncoder;
 	}
-	/*
-	@GetMapping
-	public ArrayList<User> obtenerDatos(){
-		return usuarioService.obtenerDatos();
-	}
-	*/
+
 	@PostMapping
-	public User guardarDatos(@RequestBody User user) {
+	public User saveUser(@RequestBody User user) {
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
-        user.setUsername(bCryptPasswordEncoder.encode(user.getUsername()));
         return usuarioService.guardarDatos(user);
 	}
+	
+    @GetMapping("/{id}")
+    public User getUser(@PathVariable Long id) {
+        return usuarioService.obtenerUsuario(id);
+    }
+
+
+    @GetMapping("/all")
+    public ArrayList<User> getUsers() {
+        return (ArrayList<User>) usuarioService.obtenerDatos();
+    }
 	/*
 	@DeleteMapping(path = "user/{id}")                      
 	public boolean eliminarDato(@PathVariable("id")Integer id) {

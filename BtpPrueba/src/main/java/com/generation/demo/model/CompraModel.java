@@ -32,9 +32,6 @@ public class CompraModel {
 	@Column(nullable = false)
 	private Integer total_productos;
 	
-	@Column(nullable = false)
-	private Date fecha;
-	
 	@ManyToOne
 	@JsonProperty(access = Access.WRITE_ONLY) 
 	

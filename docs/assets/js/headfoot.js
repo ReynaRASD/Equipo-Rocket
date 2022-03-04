@@ -282,8 +282,9 @@ var control = 0;
 function actualizarTotal(numero) {
   let total = 0;
   const carritoTotal = document.querySelector('.carrito-total');
-  console.log(carritoTotal);
+    console.log(carritoTotal);
   const carritoComprasObjetos = document.querySelectorAll('.carritoObjeto')
+
   console.log("objetos del carrito", carritoComprasObjetos);
 
   carritoComprasObjetos.forEach(carritoObjeto => {
@@ -316,7 +317,7 @@ function actualizarTotal(numero) {
   const elementosTitulo = $contenidoDelCarrito.getElementsByClassName('shoppingCartItemTitle')
   
 
-  console.log('aqui snake ', elementosTitulo);
+  //console.log('agregado', elementosTitulo);
 
  
 
@@ -349,11 +350,27 @@ function cambiarContador(event) {
 function comprarBotonClick() {
   $contenidoDelCarrito.innerHTML = '';
   actualizarTotal();
+
+const $direccion = document.querySelector('#autocomplete');
+const direccion = $direccion.value;
+console.log(direccion);
+
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
