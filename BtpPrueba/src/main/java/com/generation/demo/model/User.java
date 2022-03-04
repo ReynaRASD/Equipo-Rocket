@@ -18,16 +18,16 @@ public class User{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(unique = true, nullable = false )
-	private Integer id;
+	private Long id;
 	
 	@Column(nullable = false, length = 100)
     private String nombre;
 	
 	@Column(nullable = false, length = 100, unique = true)
-	private String Username; //correo
+	private String username; //correo
 	
 	@Column(nullable = false, length = 100)
-	private String Password;
+	private String password;
 	
 	@Column(nullable = false, length = 45)
 	private String telefono;
@@ -37,25 +37,25 @@ public class User{
 	
 	
 	public String getUsername() {
-		return Username;
+		return username;
 	}
 
 
 
 	public void setUsername(String username) {
-		Username = username;
+		this.username = username;
 	}
 
 
 
 	public String getPassword() {
-		return Password;
+		return password;
 	}
 
 
 
 	public void setPassword(String password) {
-		Password = password;
+		this.password = password;
 	}
 
 
@@ -68,13 +68,13 @@ public class User{
 
 
 
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
 
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -123,11 +123,7 @@ public class User{
 
 
 
-	@Override
-	public String toString() {
-		return "UsuarioModel [id=" + id + ", nombre=" + nombre + ", Username=" + Username + ", Password=" + Password
-				+ ", telefono=" + telefono + ", comprasModel=" + comprasModel + "]";
-	}
+
 
 
 
@@ -135,3 +131,4 @@ public class User{
 
 
 }
+

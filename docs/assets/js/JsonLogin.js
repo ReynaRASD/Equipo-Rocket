@@ -1,3 +1,4 @@
+
 const $formulario = document.querySelector('#formulario');
 const $password = document.querySelector('#exampleInputPassword1');
 const $correo = document.querySelector('#exampleInputEmail1');
@@ -10,7 +11,7 @@ $formulario.addEventListener('submit', (e) => {
     
 
     if(password !='' && username !=''){
-        fetch("http://localhost:8080/api/login",{
+        fetch("http://localhost:8080/login",{
             method: 'POST',
             body: JSON.stringify( {
                 password,
@@ -30,15 +31,10 @@ $formulario.addEventListener('submit', (e) => {
                 console.log(token);
                 url = window.location;
                 const path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1)
-                location.href = path +  'administrador.html';
+                location.href = path +  '../../equipos.html';
             } else {
                 localStorage.removeItem('token');
-                Swal.fire({
-                    title: 'Correo electronico o contraseña incorrecta',
-                    text: 'Reintentar',
-                    icon: 'error',
-                    confirmButtonText: 'ok'
-                });
+                alert("No we.");
                 //emailError.textContent = 'Usuario o contraseña incorrecta';
             }
         })
